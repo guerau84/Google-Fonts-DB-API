@@ -1,9 +1,12 @@
 name: Update Fonts
 
 on:
+  schedule:
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
-# TEMPORARY NOT ACTIVE
+permissions:
+  contents: write
 
 jobs:
   update-fonts:
@@ -12,20 +15,56 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'yarn'
+          node-version: 22
+          cache: 'pnpm'
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: pnpm install
+
+      - name: Clone external repository
+        run: |
+          git clone --filter=blob:none https://github.com/google/fonts.git "$GITHUB_WORKSPACE/../google-fonts"
+          echo "HEAD_HASH=$(git -C "$GITHUB_WORKSPACE/../google-fonts" rev-parse HEAD)" >> "$GITHUB_ENV"
+
+      - name: Read previous commit from state
+        run: |
+          OLD_COMMIT=$(node -p "require('./src/data/workflow-state.json').lastCommit || ''")
+          echo "OLD_COMMIT=$OLD_COMMIT" >> "$GITHUB_ENV"
+
+      - name: Save current commit hash to state
+        run: |
+          node -e "require('fs').writeFileSync('src/data/workflow-state.json', JSON.stringify({ lastCommit: process.env.HEAD_HASH }, null, 4))"
+
+      - name: Detect relevant changes
+        run: |
+          if [ -z "$OLD_COMMIT" ]; then
+            echo "No previous state — full run"
+            echo "HAS_CHANGES=true" >> "$GITHUB_ENV"
+            touch "$GITHUB_WORKSPACE/changed-files.txt"
+            exit 0
+          fi
+          git -C "$GITHUB_WORKSPACE/../google-fonts" diff --name-only "$OLD_COMMIT" HEAD > "$GITHUB_WORKSPACE/changed-files.txt" || true
+          echo "Changed files:"
+          cat "$GITHUB_WORKSPACE/changed-files.txt"
+          RELEVANT=$(grep -E '^(ofl|apache|ufl|catalog)/' "$GITHUB_WORKSPACE/changed-files.txt" || true)
+          if [ -n "$RELEVANT" ]; then
+            echo "HAS_CHANGES=true" >> "$GITHUB_ENV"
+          else
+            echo "HAS_CHANGES=false" >> "$GITHUB_ENV"
+          fi
 
       - name: Update fonts
-        run: yarn update-fonts
+        if: env.HAS_CHANGES == 'true'
+        run: npx tsx src/scripts/update.ts
 
       - name: Commit and push changes
         uses: EndBug/add-and-commit@v9
         with:
           message: 'chore: update fonts'
-          add: 'fonts.json stats.json'
+          add: 'src/data'
