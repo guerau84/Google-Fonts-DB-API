@@ -1,13 +1,17 @@
 import { Hono } from 'hono'
+import subsets from './data/subsets.json' with { type: 'json' }
 
-const subsets = new Hono()
+const subsetsApp = new Hono()
 
-subsets.get('/subsets', (c) => {
-    // LIST ALL SUBSETS
-    return c.text('OK')
-}).get('/subsets/:subset', (c) => {
-    // GET SUBSET BY NAME
-    return c.text('OK')
+subsetsApp.get('/subsets', (c) => {
+    return c.json(subsets)
+}).get('/subsets/:subsetId', (c) => {
+    const subsetId = c.req.param('subsetId')
+    const subset = subsets.subsets.find((subset: any) => subset.id === subsetId)
+    if (!subset) {
+        return c.notFound()
+    }
+    return c.json(subset)
 })
 
-export default subsets
+export default subsetsApp

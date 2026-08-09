@@ -2,7 +2,7 @@ import { Hono } from 'hono'
 import fonts from './fonts/index.js'
 import categories from './categories.js'
 import designers from './designers.js'
-import licenses from './lecenses.js'
+import licenses from './licenses.js'
 import subsets from './subsets.js'
 import fs from 'fs'
 
