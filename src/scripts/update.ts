@@ -3,11 +3,13 @@ import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import { parseMetadata, type ParsedMetadata } from '../lib/parser.js'
+import { generatePreview } from './generate-preview.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
 const DATA_DIR = join(__dirname, '..', 'data')
+const PREVIEWS_DIR = join('public', 'fonts')
 const EXTERNAL_DIR = join(__dirname, 'external', 'fonts')
 const FONTS_JSON = join(DATA_DIR, 'fonts.json')
 const STATS_JSON = join(DATA_DIR, 'stats.json')
@@ -45,6 +47,8 @@ function buildFontEntry(dirName: string, pb: ParsedMetadata) {
     })
     const weights = [...new Set(pb.fonts.map((f) => f.weight))].sort((a, b) => a - b)
 
+    const fontCssUrl = buildCssUrl(pb)
+
     return {
         id,
         family: pb.name,
@@ -64,7 +68,7 @@ function buildFontEntry(dirName: string, pb: ParsedMetadata) {
             repository: pb.repositoryUrl,
         },
         css: {
-            url: buildCssUrl(pb),
+            url: fontCssUrl,
         },
         previews: {
             svg: `fonts/${id}/svg`,
@@ -125,6 +129,7 @@ async function main(): Promise<void> {
             const entry = buildFontEntry(dir.name, pb) as { id: string }
             if (existingIds.has(entry.id)) continue
             existingIds.add(entry.id)
+            await generatePreview(buildCssUrl(pb), pb.name, PREVIEWS_DIR)
             newEntries.push(entry)
             if (!pb.repositoryUrl) noRepository.push(`${licenseDir}/${dir.name}`)
         }
