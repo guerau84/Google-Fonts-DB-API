@@ -28,9 +28,9 @@ export async function generatePreview(fontCssUrl: string, fontName: string, outp
         <path d="${svgPath}" fill="black"/>
     </svg>
 `;
-    const PNG_PATH = join(outputPath, 'png', `${fontNameId}.png`)
-    const WEBP_PATH = join(outputPath, 'webp', `${fontNameId}.webp`)
-    const SVG_PATH = join(outputPath, 'svg', `${fontNameId}.svg`)
+    const PNG_PATH = join(outputPath, 'png', `${fontNameId}, regular.png`)
+    const WEBP_PATH = join(outputPath, 'webp', `${fontNameId}, regular.webp`)
+    const SVG_PATH = join(outputPath, 'svg', `${fontNameId}, regular.svg`)
 
     await sharp(Buffer.from(svg))
         .png()
