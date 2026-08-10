@@ -12,7 +12,11 @@ categoriesApp.get('/', (c) => {
     if (!category) {
         return c.notFound()
     }
-    return c.json(categories.categories.find((category: any) => category.id === category))
+    const categoryData = categories.categories.find((item: any) => item.id === category)
+    if (!categoryData) {
+        return c.notFound()
+    }
+    return c.json(categoryData)
 })
 
 export default categoriesApp
