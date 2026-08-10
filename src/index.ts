@@ -4,7 +4,7 @@ import categories from './categories.js'
 import designers from './designers.js'
 import licenses from './licenses.js'
 import subsets from './subsets.js'
-import fs from 'fs'
+import stats from './data/stats.json' with { type: 'json' }
 
 const app = new Hono()
 
@@ -19,8 +19,7 @@ app.get('/health', (c) => {
 })
 
 app.get('/stats', (c) => {
-  const stats = fs.readFileSync('./stats.json', 'utf-8')
-  return c.json(JSON.parse(stats))
+  return c.json(stats)
 })
 
 export default app
