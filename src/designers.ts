@@ -1,13 +1,18 @@
 import { Hono } from 'hono'
+import fonts from './data/fonts.json' with { type: 'json' }
 
-const designers = new Hono()
+const designersApp = new Hono()
 
-designers.get('/designers', (c) => {
-    // LIST ALL DESIGNERS
-    return c.text('OK')
-}).get('/designers/:designer', (c) => {
-    // GET DESIGNER BY NAME
-    return c.text('OK')
+designersApp.get('/', (c) => {
+    const designers = fonts.map((font: any) => font.designer)
+    return c.json(designers)
+}).get('/:designer', (c) => {
+    const designer = c.req.param('designer')
+    const designerFonts = fonts.find((font: any) => font.designer === designer)
+    if (!designerFonts) {
+        return c.notFound()
+    }
+    return c.json(designerFonts)
 })
 
-export default designers
+export default designersApp

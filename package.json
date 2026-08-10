@@ -1,6 +1,9 @@
 {
   "name": "hono",
   "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts"
+  },
   "dependencies": {
     "hono": "^4.13.0",
     "opentype.js": "^2.0.0",
