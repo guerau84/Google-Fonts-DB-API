@@ -14,7 +14,7 @@ search.get('/search/:query', (c) => {
     const { includeCategory } = c.req.query()
     const { includeLicense } = c.req.query()
     const { includeSubset } = c.req.query()
-    const limitNumber = limit !== undefined ? Number(limit) : 20
+    const limitNumber = limit === 'false' ? fonts.length : limit !== undefined ? Number(limit) : 20
 
     const fontsList = fonts.filter((font: any) => font.family.toLowerCase().includes(query.toLowerCase()))
     if (category && includeCategory === 'true') {
@@ -30,7 +30,7 @@ search.get('/search/:query', (c) => {
         fontsList.filter((font: any) => font.subsets.includes(subset))
     }
 
-    return c.json({ query: query, total: `${fontsList.length} (limit: ${limitNumber})`, results: fontsList.slice(0, limitNumber) })
+    return c.json({ query: query, total: `${fontsList.length} (limit: ${limit === 'false' ? 'false' : limitNumber})`, results: fontsList.slice(0, limitNumber) })
 })
 
 export default search
