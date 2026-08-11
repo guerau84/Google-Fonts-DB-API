@@ -21,7 +21,11 @@ fontsApp.get('/', (c) => {
     if (!font) {
         return c.notFound()
     }
-    return c.json(fonts.find((font: any) => font.id === font))
+    const fontData = fonts.find((font: any) => font.id === font)
+    if (!fontData) {
+        return c.notFound()
+    }
+    return c.json(fontData)
 })
 
 export default fontsApp
