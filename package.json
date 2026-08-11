@@ -2,6 +2,7 @@
   "name": "hono",
   "type": "module",
   "dependencies": {
+    "@libsql/client": "^0.17.4",
     "hono": "^4.13.0"
   },
   "devDependencies": {
