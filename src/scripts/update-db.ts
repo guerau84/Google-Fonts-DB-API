@@ -1,7 +1,7 @@
 import fonts from '../data/fonts.json' with { type: 'json' }
 import db from '../db/client.js'
 
-interface Font {
+export interface Font {
     id: string;
     family: string;
     category: string;
@@ -64,11 +64,11 @@ export async function updateDB(updates: Font) {
                 updates.designer.name,
                 updates.license,
                 updates.dateAdded,
-                updates.subsets,
-                updates.styles,
-                updates.weights,
+                JSON.stringify(updates.subsets),
+                JSON.stringify(updates.styles),
+                JSON.stringify(updates.weights),
                 updates.variable,
-                updates.axes,
+                JSON.stringify(updates.axes),
                 updates.links.googleFonts,
                 updates.links.repository,
                 updates.css.url,

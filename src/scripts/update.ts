@@ -127,11 +127,11 @@ async function main(): Promise<void> {
                 continue
             }
 
-            const entry = buildFontEntry(dir.name, pb) as { id: string }
+            const entry = buildFontEntry(dir.name, pb)
             if (existingIds.has(entry.id)) continue
             existingIds.add(entry.id)
             await generatePreview(buildCssUrl(pb), pb.name, PREVIEWS_DIR)
-            updateDB(entry)
+            await updateDB(entry)
             newEntries.push(entry)
             if (!pb.repositoryUrl) noRepository.push(`${licenseDir}/${dir.name}`)
         }
