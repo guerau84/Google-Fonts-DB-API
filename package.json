@@ -5,6 +5,7 @@
     "dev": "tsx watch src/index.ts"
   },
   "dependencies": {
+    "@libsql/client": "^0.17.4",
     "hono": "^4.13.0",
     "opentype.js": "^2.0.0",
     "sharp": "^0.35.3",

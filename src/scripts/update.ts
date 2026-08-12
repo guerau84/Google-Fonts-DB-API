@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url'
 
 import { parseMetadata, type ParsedMetadata } from '../lib/parser.js'
 import { generatePreview } from './generate-preview.js'
+import { updateDB } from './update-db.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -130,6 +131,7 @@ async function main(): Promise<void> {
             if (existingIds.has(entry.id)) continue
             existingIds.add(entry.id)
             await generatePreview(buildCssUrl(pb), pb.name, PREVIEWS_DIR)
+            updateDB(entry)
             newEntries.push(entry)
             if (!pb.repositoryUrl) noRepository.push(`${licenseDir}/${dir.name}`)
         }

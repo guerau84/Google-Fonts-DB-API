@@ -15,7 +15,7 @@ export async function generatePreview(fontCssUrl: string, fontName: string, outp
 
     const font = opentype.parse(sfnt);
     const path = font.getPath(
-        `${fontName} (regular)`,
+        fontName,
         0,
         100,
         72
