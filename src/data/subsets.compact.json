@@ -1,0 +1,910 @@
+{
+  "subsets": [
+    {
+      "id": "latin",
+      "name": "Latin",
+      "count": 1875
+    },
+    {
+      "id": "latin-ext",
+      "name": "Latin Ext",
+      "count": 1548
+    },
+    {
+      "id": "vietnamese",
+      "name": "Vietnamese",
+      "count": 537
+    },
+    {
+      "id": "cyrillic",
+      "name": "Cyrillic",
+      "count": 307
+    },
+    {
+      "id": "cyrillic-ext",
+      "name": "Cyrillic Ext",
+      "count": 244
+    },
+    {
+      "id": "greek",
+      "name": "Greek",
+      "count": 128
+    },
+    {
+      "id": "math",
+      "name": "Math",
+      "count": 78
+    },
+    {
+      "id": "greek-ext",
+      "name": "Greek Ext",
+      "count": 74
+    },
+    {
+      "id": "symbols",
+      "name": "Symbols",
+      "count": 72
+    },
+    {
+      "id": "japanese",
+      "name": "Japanese",
+      "count": 69
+    },
+    {
+      "id": "devanagari",
+      "name": "Devanagari",
+      "count": 65
+    },
+    {
+      "id": "hebrew",
+      "name": "Hebrew",
+      "count": 62
+    },
+    {
+      "id": "arabic",
+      "name": "Arabic",
+      "count": 60
+    },
+    {
+      "id": "korean",
+      "name": "Korean",
+      "count": 47
+    },
+    {
+      "id": "thai",
+      "name": "Thai",
+      "count": 34
+    },
+    {
+      "id": "khmer",
+      "name": "Khmer",
+      "count": 28
+    },
+    {
+      "id": "telugu",
+      "name": "Telugu",
+      "count": 28
+    },
+    {
+      "id": "symbols2",
+      "name": "Symbols2",
+      "count": 19
+    },
+    {
+      "id": "tamil",
+      "name": "Tamil",
+      "count": 18
+    },
+    {
+      "id": "chinese-traditional",
+      "name": "Chinese Traditional",
+      "count": 16
+    },
+    {
+      "id": "gujarati",
+      "name": "Gujarati",
+      "count": 13
+    },
+    {
+      "id": "bengali",
+      "name": "Bengali",
+      "count": 12
+    },
+    {
+      "id": "gurmukhi",
+      "name": "Gurmukhi",
+      "count": 11
+    },
+    {
+      "id": "kannada",
+      "name": "Kannada",
+      "count": 11
+    },
+    {
+      "id": "chinese-simplified",
+      "name": "Chinese Simplified",
+      "count": 10
+    },
+    {
+      "id": "malayalam",
+      "name": "Malayalam",
+      "count": 10
+    },
+    {
+      "id": "sinhala",
+      "name": "Sinhala",
+      "count": 10
+    },
+    {
+      "id": "emoji",
+      "name": "Emoji",
+      "count": 9
+    },
+    {
+      "id": "braille",
+      "name": "Braille",
+      "count": 6
+    },
+    {
+      "id": "ethiopic",
+      "name": "Ethiopic",
+      "count": 6
+    },
+    {
+      "id": "lao",
+      "name": "Lao",
+      "count": 6
+    },
+    {
+      "id": "oriya",
+      "name": "Oriya",
+      "count": 6
+    },
+    {
+      "id": "syriac",
+      "name": "Syriac",
+      "count": 6
+    },
+    {
+      "id": "armenian",
+      "name": "Armenian",
+      "count": 5
+    },
+    {
+      "id": "myanmar",
+      "name": "Myanmar",
+      "count": 5
+    },
+    {
+      "id": "adlam",
+      "name": "Adlam",
+      "count": 4
+    },
+    {
+      "id": "canadian-aboriginal",
+      "name": "Canadian Aboriginal",
+      "count": 4
+    },
+    {
+      "id": "cherokee",
+      "name": "Cherokee",
+      "count": 4
+    },
+    {
+      "id": "lisu",
+      "name": "Lisu",
+      "count": 4
+    },
+    {
+      "id": "chinese-hongkong",
+      "name": "Chinese Hongkong",
+      "count": 3
+    },
+    {
+      "id": "kayah-li",
+      "name": "Kayah Li",
+      "count": 3
+    },
+    {
+      "id": "nko",
+      "name": "Nko",
+      "count": 3
+    },
+    {
+      "id": "runic",
+      "name": "Runic",
+      "count": 3
+    },
+    {
+      "id": "tibetan",
+      "name": "Tibetan",
+      "count": 3
+    },
+    {
+      "id": "tifinagh",
+      "name": "Tifinagh",
+      "count": 3
+    },
+    {
+      "id": "balinese",
+      "name": "Balinese",
+      "count": 2
+    },
+    {
+      "id": "georgian",
+      "name": "Georgian",
+      "count": 2
+    },
+    {
+      "id": "glagolitic",
+      "name": "Glagolitic",
+      "count": 2
+    },
+    {
+      "id": "gothic",
+      "name": "Gothic",
+      "count": 2
+    },
+    {
+      "id": "grantha",
+      "name": "Grantha",
+      "count": 2
+    },
+    {
+      "id": "gunjala-gondi",
+      "name": "Gunjala Gondi",
+      "count": 2
+    },
+    {
+      "id": "khojki",
+      "name": "Khojki",
+      "count": 2
+    },
+    {
+      "id": "lepcha",
+      "name": "Lepcha",
+      "count": 2
+    },
+    {
+      "id": "limbu",
+      "name": "Limbu",
+      "count": 2
+    },
+    {
+      "id": "mayan-numerals",
+      "name": "Mayan Numerals",
+      "count": 2
+    },
+    {
+      "id": "new-tai-lue",
+      "name": "New Tai Lue",
+      "count": 2
+    },
+    {
+      "id": "nushu",
+      "name": "Nushu",
+      "count": 2
+    },
+    {
+      "id": "nyiakeng-puachue-hmong",
+      "name": "Nyiakeng Puachue Hmong",
+      "count": 2
+    },
+    {
+      "id": "old-italic",
+      "name": "Old Italic",
+      "count": 2
+    },
+    {
+      "id": "old-permic",
+      "name": "Old Permic",
+      "count": 2
+    },
+    {
+      "id": "phoenician",
+      "name": "Phoenician",
+      "count": 2
+    },
+    {
+      "id": "tai-viet",
+      "name": "Tai Viet",
+      "count": 2
+    },
+    {
+      "id": "vithkuqi",
+      "name": "Vithkuqi",
+      "count": 2
+    },
+    {
+      "id": "yi",
+      "name": "Yi",
+      "count": 2
+    },
+    {
+      "id": "ahom",
+      "name": "Ahom",
+      "count": 1
+    },
+    {
+      "id": "anatolian-hieroglyphs",
+      "name": "Anatolian Hieroglyphs",
+      "count": 1
+    },
+    {
+      "id": "avestan",
+      "name": "Avestan",
+      "count": 1
+    },
+    {
+      "id": "bamum",
+      "name": "Bamum",
+      "count": 1
+    },
+    {
+      "id": "bassa-vah",
+      "name": "Bassa Vah",
+      "count": 1
+    },
+    {
+      "id": "batak",
+      "name": "Batak",
+      "count": 1
+    },
+    {
+      "id": "beria-erfe",
+      "name": "Beria Erfe",
+      "count": 1
+    },
+    {
+      "id": "bhaiksuki",
+      "name": "Bhaiksuki",
+      "count": 1
+    },
+    {
+      "id": "brahmi",
+      "name": "Brahmi",
+      "count": 1
+    },
+    {
+      "id": "buginese",
+      "name": "Buginese",
+      "count": 1
+    },
+    {
+      "id": "buhid",
+      "name": "Buhid",
+      "count": 1
+    },
+    {
+      "id": "carian",
+      "name": "Carian",
+      "count": 1
+    },
+    {
+      "id": "caucasian-albanian",
+      "name": "Caucasian Albanian",
+      "count": 1
+    },
+    {
+      "id": "chakma",
+      "name": "Chakma",
+      "count": 1
+    },
+    {
+      "id": "cham",
+      "name": "Cham",
+      "count": 1
+    },
+    {
+      "id": "chorasmian",
+      "name": "Chorasmian",
+      "count": 1
+    },
+    {
+      "id": "coptic",
+      "name": "Coptic",
+      "count": 1
+    },
+    {
+      "id": "cuneiform",
+      "name": "Cuneiform",
+      "count": 1
+    },
+    {
+      "id": "cypriot",
+      "name": "Cypriot",
+      "count": 1
+    },
+    {
+      "id": "cypro-minoan",
+      "name": "Cypro Minoan",
+      "count": 1
+    },
+    {
+      "id": "deseret",
+      "name": "Deseret",
+      "count": 1
+    },
+    {
+      "id": "dives-akuru",
+      "name": "Dives Akuru",
+      "count": 1
+    },
+    {
+      "id": "dogra",
+      "name": "Dogra",
+      "count": 1
+    },
+    {
+      "id": "duployan",
+      "name": "Duployan",
+      "count": 1
+    },
+    {
+      "id": "egyptian-hieroglyphs",
+      "name": "Egyptian Hieroglyphs",
+      "count": 1
+    },
+    {
+      "id": "elbasan",
+      "name": "Elbasan",
+      "count": 1
+    },
+    {
+      "id": "elymaic",
+      "name": "Elymaic",
+      "count": 1
+    },
+    {
+      "id": "hanifi-rohingya",
+      "name": "Hanifi Rohingya",
+      "count": 1
+    },
+    {
+      "id": "hanunoo",
+      "name": "Hanunoo",
+      "count": 1
+    },
+    {
+      "id": "hatran",
+      "name": "Hatran",
+      "count": 1
+    },
+    {
+      "id": "imperial-aramaic",
+      "name": "Imperial Aramaic",
+      "count": 1
+    },
+    {
+      "id": "indic-siyaq-numbers",
+      "name": "Indic Siyaq Numbers",
+      "count": 1
+    },
+    {
+      "id": "inscriptional-pahlavi",
+      "name": "Inscriptional Pahlavi",
+      "count": 1
+    },
+    {
+      "id": "inscriptional-parthian",
+      "name": "Inscriptional Parthian",
+      "count": 1
+    },
+    {
+      "id": "javanese",
+      "name": "Javanese",
+      "count": 1
+    },
+    {
+      "id": "kaithi",
+      "name": "Kaithi",
+      "count": 1
+    },
+    {
+      "id": "kana-extended",
+      "name": "Kana Extended",
+      "count": 1
+    },
+    {
+      "id": "kawi",
+      "name": "Kawi",
+      "count": 1
+    },
+    {
+      "id": "kharoshthi",
+      "name": "Kharoshthi",
+      "count": 1
+    },
+    {
+      "id": "khitan-small-script",
+      "name": "Khitan Small Script",
+      "count": 1
+    },
+    {
+      "id": "khudawadi",
+      "name": "Khudawadi",
+      "count": 1
+    },
+    {
+      "id": "kirat-rai",
+      "name": "Kirat Rai",
+      "count": 1
+    },
+    {
+      "id": "linear-a",
+      "name": "Linear A",
+      "count": 1
+    },
+    {
+      "id": "linear-b",
+      "name": "Linear B",
+      "count": 1
+    },
+    {
+      "id": "lycian",
+      "name": "Lycian",
+      "count": 1
+    },
+    {
+      "id": "lydian",
+      "name": "Lydian",
+      "count": 1
+    },
+    {
+      "id": "mahajani",
+      "name": "Mahajani",
+      "count": 1
+    },
+    {
+      "id": "makasar",
+      "name": "Makasar",
+      "count": 1
+    },
+    {
+      "id": "mandaic",
+      "name": "Mandaic",
+      "count": 1
+    },
+    {
+      "id": "manichaean",
+      "name": "Manichaean",
+      "count": 1
+    },
+    {
+      "id": "marchen",
+      "name": "Marchen",
+      "count": 1
+    },
+    {
+      "id": "masaram-gondi",
+      "name": "Masaram Gondi",
+      "count": 1
+    },
+    {
+      "id": "medefaidrin",
+      "name": "Medefaidrin",
+      "count": 1
+    },
+    {
+      "id": "meetei-mayek",
+      "name": "Meetei Mayek",
+      "count": 1
+    },
+    {
+      "id": "mende-kikakui",
+      "name": "Mende Kikakui",
+      "count": 1
+    },
+    {
+      "id": "meroitic",
+      "name": "Meroitic",
+      "count": 1
+    },
+    {
+      "id": "meroitic-cursive",
+      "name": "Meroitic Cursive",
+      "count": 1
+    },
+    {
+      "id": "meroitic-hieroglyphs",
+      "name": "Meroitic Hieroglyphs",
+      "count": 1
+    },
+    {
+      "id": "miao",
+      "name": "Miao",
+      "count": 1
+    },
+    {
+      "id": "modi",
+      "name": "Modi",
+      "count": 1
+    },
+    {
+      "id": "mongolian",
+      "name": "Mongolian",
+      "count": 1
+    },
+    {
+      "id": "mro",
+      "name": "Mro",
+      "count": 1
+    },
+    {
+      "id": "multani",
+      "name": "Multani",
+      "count": 1
+    },
+    {
+      "id": "music",
+      "name": "Music",
+      "count": 1
+    },
+    {
+      "id": "nabataean",
+      "name": "Nabataean",
+      "count": 1
+    },
+    {
+      "id": "nag-mundari",
+      "name": "Nag Mundari",
+      "count": 1
+    },
+    {
+      "id": "nandinagari",
+      "name": "Nandinagari",
+      "count": 1
+    },
+    {
+      "id": "newa",
+      "name": "Newa",
+      "count": 1
+    },
+    {
+      "id": "ogham",
+      "name": "Ogham",
+      "count": 1
+    },
+    {
+      "id": "ol-chiki",
+      "name": "Ol Chiki",
+      "count": 1
+    },
+    {
+      "id": "old-hungarian",
+      "name": "Old Hungarian",
+      "count": 1
+    },
+    {
+      "id": "old-north-arabian",
+      "name": "Old North Arabian",
+      "count": 1
+    },
+    {
+      "id": "old-persian",
+      "name": "Old Persian",
+      "count": 1
+    },
+    {
+      "id": "old-sogdian",
+      "name": "Old Sogdian",
+      "count": 1
+    },
+    {
+      "id": "old-south-arabian",
+      "name": "Old South Arabian",
+      "count": 1
+    },
+    {
+      "id": "old-turkic",
+      "name": "Old Turkic",
+      "count": 1
+    },
+    {
+      "id": "old-uyghur",
+      "name": "Old Uyghur",
+      "count": 1
+    },
+    {
+      "id": "osage",
+      "name": "Osage",
+      "count": 1
+    },
+    {
+      "id": "osmanya",
+      "name": "Osmanya",
+      "count": 1
+    },
+    {
+      "id": "ottoman-siyaq-numbers",
+      "name": "Ottoman Siyaq Numbers",
+      "count": 1
+    },
+    {
+      "id": "pahawh-hmong",
+      "name": "Pahawh Hmong",
+      "count": 1
+    },
+    {
+      "id": "palmyrene",
+      "name": "Palmyrene",
+      "count": 1
+    },
+    {
+      "id": "pau-cin-hau",
+      "name": "Pau Cin Hau",
+      "count": 1
+    },
+    {
+      "id": "phags-pa",
+      "name": "Phags Pa",
+      "count": 1
+    },
+    {
+      "id": "psalter-pahlavi",
+      "name": "Psalter Pahlavi",
+      "count": 1
+    },
+    {
+      "id": "rejang",
+      "name": "Rejang",
+      "count": 1
+    },
+    {
+      "id": "samaritan",
+      "name": "Samaritan",
+      "count": 1
+    },
+    {
+      "id": "saurashtra",
+      "name": "Saurashtra",
+      "count": 1
+    },
+    {
+      "id": "sharada",
+      "name": "Sharada",
+      "count": 1
+    },
+    {
+      "id": "shavian",
+      "name": "Shavian",
+      "count": 1
+    },
+    {
+      "id": "siddham",
+      "name": "Siddham",
+      "count": 1
+    },
+    {
+      "id": "signwriting",
+      "name": "Signwriting",
+      "count": 1
+    },
+    {
+      "id": "sogdian",
+      "name": "Sogdian",
+      "count": 1
+    },
+    {
+      "id": "sora-sompeng",
+      "name": "Sora Sompeng",
+      "count": 1
+    },
+    {
+      "id": "soyombo",
+      "name": "Soyombo",
+      "count": 1
+    },
+    {
+      "id": "sundanese",
+      "name": "Sundanese",
+      "count": 1
+    },
+    {
+      "id": "sunuwar",
+      "name": "Sunuwar",
+      "count": 1
+    },
+    {
+      "id": "syloti-nagri",
+      "name": "Syloti Nagri",
+      "count": 1
+    },
+    {
+      "id": "tagalog",
+      "name": "Tagalog",
+      "count": 1
+    },
+    {
+      "id": "tagbanwa",
+      "name": "Tagbanwa",
+      "count": 1
+    },
+    {
+      "id": "tai-le",
+      "name": "Tai Le",
+      "count": 1
+    },
+    {
+      "id": "tai-tham",
+      "name": "Tai Tham",
+      "count": 1
+    },
+    {
+      "id": "takri",
+      "name": "Takri",
+      "count": 1
+    },
+    {
+      "id": "tamil-supplement",
+      "name": "Tamil Supplement",
+      "count": 1
+    },
+    {
+      "id": "tangsa",
+      "name": "Tangsa",
+      "count": 1
+    },
+    {
+      "id": "tangut",
+      "name": "Tangut",
+      "count": 1
+    },
+    {
+      "id": "thaana",
+      "name": "Thaana",
+      "count": 1
+    },
+    {
+      "id": "tirhuta",
+      "name": "Tirhuta",
+      "count": 1
+    },
+    {
+      "id": "todhri",
+      "name": "Todhri",
+      "count": 1
+    },
+    {
+      "id": "toto",
+      "name": "Toto",
+      "count": 1
+    },
+    {
+      "id": "ugaritic",
+      "name": "Ugaritic",
+      "count": 1
+    },
+    {
+      "id": "vai",
+      "name": "Vai",
+      "count": 1
+    },
+    {
+      "id": "wancho",
+      "name": "Wancho",
+      "count": 1
+    },
+    {
+      "id": "warang-citi",
+      "name": "Warang Citi",
+      "count": 1
+    },
+    {
+      "id": "yezidi",
+      "name": "Yezidi",
+      "count": 1
+    },
+    {
+      "id": "zanabazar-square",
+      "name": "Zanabazar Square",
+      "count": 1
+    },
+    {
+      "id": "znamenny",
+      "name": "Znamenny",
+      "count": 1
+    }
+  ],
+  "total": 181
+}

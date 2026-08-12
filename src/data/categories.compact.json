@@ -1,0 +1,30 @@
+{
+  "categories": [
+    {
+      "id": "sans-serif",
+      "name": "Sans Serif",
+      "count": 756
+    },
+    {
+      "id": "serif",
+      "name": "Serif",
+      "count": 362
+    },
+    {
+      "id": "display",
+      "name": "Display",
+      "count": 503
+    },
+    {
+      "id": "handwriting",
+      "name": "Handwriting",
+      "count": 355
+    },
+    {
+      "id": "monospace",
+      "name": "Monospace",
+      "count": 46
+    }
+  ],
+  "total": 5
+}
