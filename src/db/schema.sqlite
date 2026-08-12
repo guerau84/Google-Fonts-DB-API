@@ -1,0 +1,27 @@
+CREATE TABLE fonts (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    font_id TEXT NOT NULL UNIQUE,
+    family TEXT NOT NULL UNIQUE,
+    category TEXT NOT NULL,
+    designer TEXT NOT NULL,
+    license TEXT NOT NULL,
+    date_added TEXT NOT NULL,
+
+    subsets TEXT NOT NULL,
+    styles TEXT NOT NULL,
+    weights TEXT NOT NULL,
+    variable BOOLEAN NOT NULL DEFAULT 0,
+    axes TEXT NOT NULL,
+
+    google_fonts_url TEXT NOT NULL,
+    repository_url TEXT NOT NULL,
+    google_fonts_css_url TEXT NOT NULL,
+
+    preview_svg TEXT NOT NULL,
+    preview_png TEXT NOT NULL,
+    preview_webp TEXT NOT NULL
+);
+
+CREATE INDEX idx_fonts_category ON fonts(category);
+CREATE INDEX idx_fonts_designer ON fonts(designer);
+CREATE INDEX idx_fonts_license ON fonts(license);
