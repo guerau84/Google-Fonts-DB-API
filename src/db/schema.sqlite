@@ -1,27 +1,52 @@
+DROP TABLE IF EXISTS fonts;
+DROP TABLE IF EXISTS font_subsets;
+DROP TABLE IF EXISTS font_styles;
+DROP TABLE IF EXISTS font_weights;
+
+
 CREATE TABLE fonts (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    font_id TEXT NOT NULL UNIQUE,
-    family TEXT NOT NULL UNIQUE,
-    category TEXT NOT NULL,
-    designer TEXT NOT NULL,
-    license TEXT NOT NULL,
-    date_added TEXT NOT NULL,
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+font_id TEXT NOT NULL UNIQUE,
+family TEXT NOT NULL UNIQUE,
+category TEXT NOT NULL,
+designer TEXT NOT NULL,
+license TEXT NOT NULL,
+date_added TEXT NOT NULL,
+subsets TEXT NOT NULL,
+styles TEXT NOT NULL,
+weights TEXT NOT NULL,
+variable BOOLEAN NOT NULL,
+axes TEXT NOT NULL,
+google_fonts_url TEXT NOT NULL,
+repository_url TEXT NOT NULL,
+google_fonts_css_url TEXT NOT NULL,
+preview_svg TEXT NOT NULL,
+preview_png TEXT NOT NULL,
+preview_webp TEXT NOT NULL);
 
-    subsets TEXT NOT NULL,
-    styles TEXT NOT NULL,
-    weights TEXT NOT NULL,
-    variable BOOLEAN NOT NULL DEFAULT 0,
-    axes TEXT NOT NULL,
+CREATE TABLE font_subsets (
+font_id TEXT NOT NULL,
+subset TEXT NOT NULL,
+PRIMARY KEY (font_id,subset),
+FOREIGN KEY(font_id) REFERENCES fonts(font_id));
 
-    google_fonts_url TEXT NOT NULL,
-    repository_url TEXT NOT NULL,
-    google_fonts_css_url TEXT NOT NULL,
+CREATE TABLE font_styles (
+font_id TEXT NOT NULL,
+style TEXT NOT NULL,
+PRIMARY KEY (font_id,style),
+FOREIGN KEY(font_id) REFERENCES fonts(font_id));
 
-    preview_svg TEXT NOT NULL,
-    preview_png TEXT NOT NULL,
-    preview_webp TEXT NOT NULL
-);
+CREATE TABLE font_weights (
+font_id TEXT NOT NULL,
+weight INTEGER NOT NULL,
+PRIMARY KEY (font_id,weight),
+FOREIGN KEY(font_id) REFERENCES fonts(font_id));
 
 CREATE INDEX idx_fonts_category ON fonts(category);
 CREATE INDEX idx_fonts_designer ON fonts(designer);
 CREATE INDEX idx_fonts_license ON fonts(license);
+CREATE INDEX idx_fonts_variable ON fonts(variable);
+
+CREATE INDEX idx_font_subsets_subset ON font_subsets(subset);
+CREATE INDEX idx_font_styles_style ON font_styles(style);
+CREATE INDEX idx_font_weights_weight ON font_weights(weight);
