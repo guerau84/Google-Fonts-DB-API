@@ -1,50 +1,48 @@
 import { Hono } from 'hono'
 import fonts from './data/fonts.json' with { type: 'json' }
+import { readOnlyDb } from './db/client.js'
 
 const designersApp = new Hono()
 
-designersApp.get('/', (c) => {
-    const designerNames = [...new Set(
-        fonts
-            .map((font: any) => typeof font.designer === 'object' ? font.designer?.name : font.designer)
-            .filter(Boolean)
-    )] as string[]
+designersApp.get('/', async (c) => {
+    const { rows } = await readOnlyDb.execute(`
+    SELECT DISTINCT designer
+    FROM fonts
+    WHERE designer IS NOT NULL
+      AND designer != ''
+    ORDER BY designer
+  `)
 
-    const designers = designerNames.map((designerName: string) => ({
-        id: designerName
-            .toLowerCase()
-            .normalize("NFD")
-            .replace(/[\u0300-\u036f]/g, "")
-            .replace(/\s+/g, "-"),
-        name: designerName,
-        fonts: fonts
-            .filter((font: any) => {
-                const name = typeof font.designer === 'object' ? font.designer?.name : font.designer
-                return name === designerName
-            })
-            .map((font: any) => ({
-                id: font.id,
-                name: font.family,
-            })),
-    }))
+    return c.json(rows.map(row => row.designer))
 
-    return c.json(designers)
-}).get('/:designer', (c) => {
-    const designer = c.req.param('designer')
-    const designerFonts = fonts.filter((font: any) => {
-        const name = typeof font.designer === 'object' ? font.designer?.name : font.designer
-        if (!name) return false
-        const id = name
-            .toLowerCase()
-            .normalize("NFD")
-            .replace(/[\u0300-\u036f]/g, "")
-            .replace(/\s+/g, "-")
-        return id === designer || name === designer
+}).get('/:designer', async (c) => {
+    const designerParam = c.req.param('designer').toLowerCase()
+
+    // En la base de datos el nombre del diseñador contiene espacios (ej. "Vernon Adams"),
+    // pero el parámetro de la URL se envía en formato slug (ej. "vernon-adams").
+    const { rows } = await readOnlyDb.execute({
+        sql: `
+            SELECT * FROM fonts 
+            WHERE REPLACE(LOWER(designer), ' ', '-') = ? 
+               OR LOWER(designer) = ?
+        `,
+        args: [designerParam, designerParam]
     })
-    if (designerFonts.length === 0) {
+
+    if (rows.length === 0) {
         return c.notFound()
     }
-    return c.json(designerFonts)
+
+    // Parsear los campos guardados como cadenas JSON en SQLite
+    const formattedRows = rows.map(row => ({
+        ...row,
+        subsets: typeof row.subsets === 'string' ? JSON.parse(row.subsets) : row.subsets,
+        styles: typeof row.styles === 'string' ? JSON.parse(row.styles) : row.styles,
+        weights: typeof row.weights === 'string' ? JSON.parse(row.weights) : row.weights,
+        axes: typeof row.axes === 'string' ? JSON.parse(row.axes) : row.axes,
+    }))
+
+    return c.json(formattedRows)
 })
 
 export default designersApp
