@@ -1,5 +1,5 @@
 import fonts from '../data/fonts.json' with { type: 'json' }
-import db from '../db/client.js'
+import { readAndWriteDb } from '../db/client.js'
 
 export interface Font {
     id: string;
@@ -42,7 +42,7 @@ export async function updateDB(updates: Font) {
   preview_svg, preview_png, preview_webp
 `
 
-    const existingRows = await db.execute({
+    const existingRows = await readAndWriteDb.execute({
         sql: 'SELECT font_id FROM fonts',
         args: [],
     })
@@ -55,7 +55,7 @@ export async function updateDB(updates: Font) {
     let weightsCount = 0
 
     if (!existingIds.has(updates.id)) {
-        await db.execute({
+        await readAndWriteDb.execute({
             sql: `INSERT INTO fonts (${FONT_COLUMNS}) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
             args: [
                 updates.id,

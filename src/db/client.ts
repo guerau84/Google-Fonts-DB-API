@@ -1,8 +1,13 @@
 import { createClient } from '@libsql/client'
 
-const db = createClient({
+const readAndWriteDb = createClient({
     url: process.env.TURSO_DATABASE_URL!,
     authToken: process.env.TURSO_AUTH_TOKEN!,
 })
 
-export default db
+const readOnlyDb = createClient({
+    url: process.env.TURSO_DATABASE_URL!,
+    authToken: process.env.TURSO_AUTH_TOKEN_READ_ONLY!,
+})
+
+export { readAndWriteDb, readOnlyDb }
