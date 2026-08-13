@@ -5,7 +5,7 @@ import { readOnlyDb } from './db/client.js'
 const licensesApp = new Hono()
 
 licensesApp.get('/', async (c) => {
-    const result = await readOnlyDb.execute(`
+  const result = await readOnlyDb.execute(`
     SELECT DISTINCT license
     FROM fonts
     WHERE license IS NOT NULL
@@ -13,20 +13,28 @@ licensesApp.get('/', async (c) => {
     ORDER BY license
   `)
 
-    return c.json(result.rows.map(row => row.license))
+  return c.json(result.rows.map(row => row.license))
 
 }).get('/:licenseId', async (c) => {
-    const licenseId = c.req.param('licenseId').toUpperCase()
-    const { rows } = await readOnlyDb.execute({
-        sql: 'SELECT * FROM fonts WHERE license = ?',
-        args: [licenseId]
-    })
+  const licenseId = c.req.param('licenseId').toUpperCase()
+  const { rows } = await readOnlyDb.execute({
+    sql: 'SELECT * FROM fonts WHERE license = ?',
+    args: [licenseId]
+  })
 
-    if (rows.length === 0) {
-        return c.notFound()
-    }
+  if (rows.length === 0) {
+    return c.notFound()
+  }
 
-    return c.json(rows)
+  const formattedRows = rows.map(row => ({
+    ...row,
+    subsets: typeof row.subsets === 'string' ? JSON.parse(row.subsets) : row.subsets,
+    styles: typeof row.styles === 'string' ? JSON.parse(row.styles) : row.styles,
+    weights: typeof row.weights === 'string' ? JSON.parse(row.weights) : row.weights,
+    axes: typeof row.axes === 'string' ? JSON.parse(row.axes) : row.axes,
+  }))
+
+  return c.json({ license: licenseId, count: rows.length, fonts: { ...formattedRows } })
 })
 
 export default licensesApp

@@ -18,8 +18,6 @@ designersApp.get('/', async (c) => {
 }).get('/:designer', async (c) => {
     const designerParam = c.req.param('designer').toLowerCase()
 
-    // En la base de datos el nombre del diseñador contiene espacios (ej. "Vernon Adams"),
-    // pero el parámetro de la URL se envía en formato slug (ej. "vernon-adams").
     const { rows } = await readOnlyDb.execute({
         sql: `
             SELECT * FROM fonts 
@@ -33,7 +31,6 @@ designersApp.get('/', async (c) => {
         return c.notFound()
     }
 
-    // Parsear los campos guardados como cadenas JSON en SQLite
     const formattedRows = rows.map(row => ({
         ...row,
         subsets: typeof row.subsets === 'string' ? JSON.parse(row.subsets) : row.subsets,
@@ -42,7 +39,7 @@ designersApp.get('/', async (c) => {
         axes: typeof row.axes === 'string' ? JSON.parse(row.axes) : row.axes,
     }))
 
-    return c.json(formattedRows)
+    return c.json({ designer: designerParam, count: rows.length, fonts: { ...formattedRows } })
 })
 
 export default designersApp
