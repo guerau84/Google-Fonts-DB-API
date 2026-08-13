@@ -4,14 +4,19 @@ import compactCategories from './data/categories.compact.json' with { type: 'jso
 
 const categoriesApp = new Hono()
 
+const categoriesList = [...new Set(compactCategories.categories)]
+const categoriesMap = new Map(
+    categories.categories.map(item => [item.id, item])
+)
+
 categoriesApp.get('/', (c) => {
-    return c.json(compactCategories)
+    return c.json(categoriesList)
 }).get('/:category', (c) => {
-    const category = c.req.param('category')
+    const category = c.req.param('category').toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "-")
     if (!category) {
         return c.notFound()
     }
-    const categoryData = categories.categories.find((item: any) => item.id === category)
+    const categoryData = categoriesMap.get(category)
     if (!categoryData) {
         return c.notFound()
     }
