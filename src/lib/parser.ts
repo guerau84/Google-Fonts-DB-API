@@ -1,5 +1,3 @@
-import fontsData from '../data/fonts.json' with { type: 'json' };
-
 const CATEGORY_MAP: Record<string, string> = {
     SANS_SERIF: 'sans-serif',
     SERIF: 'serif',
@@ -31,8 +29,6 @@ export interface ParsedMetadata {
     variable: boolean
     repositoryUrl: string
 }
-
-const fontsID = fontsData.map(font => font.id)
 
 const FIELD_RE = (name: string) => new RegExp(`(?:^|\\n)${name}: "([^"]*)"`)
 

@@ -1,6 +1,11 @@
 {
   "subsets": [
     {
+      "id": "menu",
+      "name": "Menu",
+      "count": 2017
+    },
+    {
       "id": "latin",
       "name": "Latin",
       "count": 1875
@@ -906,5 +911,5 @@
       "count": 1
     }
   ],
-  "total": 181
+  "total": 182
 }

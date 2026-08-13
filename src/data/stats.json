@@ -1,7 +1,7 @@
 {
   "fonts": 2022,
   "categories": 5,
-  "subsets": 181,
+  "subsets": 182,
   "designers": 604,
   "variable": {
     "families": 581,
@@ -31,6 +31,7 @@
       "monospace": 46
     },
     "subsets": {
+      "menu": 2017,
       "latin": 1875,
       "latin-ext": 1548,
       "vietnamese": 537,
