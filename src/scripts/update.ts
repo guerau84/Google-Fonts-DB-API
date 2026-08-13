@@ -10,9 +10,11 @@ import { FontStats } from '../interfaces/font-stats.interface.js'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
+const WORKSPACE = process.env.GITHUB_WORKSPACE ?? process.cwd()
+
 const DATA_DIR = join(__dirname, '..', 'data')
 const PREVIEWS_DIR = join('public', 'fonts')
-const EXTERNAL_DIR = join(__dirname, 'external', 'fonts')
+const EXTERNAL_DIR = join(WORKSPACE, '..', 'google-fonts')
 const FONTS_JSON = join(DATA_DIR, 'fonts.json')
 const STATS_JSON = join(DATA_DIR, 'stats.json')
 const CATEGORIES_JSON = join(DATA_DIR, 'categories.json')

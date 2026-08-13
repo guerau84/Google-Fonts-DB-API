@@ -67,4 +67,4 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           message: 'chore: update fonts'
-          add: 'src/data'
+          add: 'src/data public/fonts'
