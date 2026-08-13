@@ -13,10 +13,8 @@ fontsApp.route('/', png)
 fontsApp.route('/', webp)
 
 fontsApp.get('/', (c) => {
-    // LIST ALL FONTS
     return c.json(fonts)
 }).get('/:font', (c) => {
-    // GET FONT BY NAME
     const font = c.req.param('font')
     if (!font) {
         return c.notFound()

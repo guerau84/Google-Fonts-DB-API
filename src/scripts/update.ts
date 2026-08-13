@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 import { parseMetadata, type ParsedMetadata } from '../lib/parser.js'
 import { generatePreview } from './generate-preview.js'
 import { updateDB, type Font } from './update-db.js'
-import { FontStats } from '../interfaces/font-stats.interfaces.js'
+import { FontStats } from '../interfaces/font-stats.interface.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
