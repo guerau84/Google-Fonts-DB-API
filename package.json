@@ -2,7 +2,8 @@
   "name": "hono",
   "type": "module",
   "scripts": {
-    "dev": "tsx watch src/index.ts"
+    "dev": "tsx watch src/index.ts",
+    "update-fonts": "tsx src/scripts/update.ts"
   },
   "dependencies": {
     "@libsql/client": "^0.17.4",
