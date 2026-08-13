@@ -15,7 +15,7 @@ export async function generatePreview(fontCssUrl: string, fontName: string, outp
 
     const font = opentype.parse(sfnt);
     const path = font.getPath(
-        fontName,
+        `${fontName} (regular)`,
         0,
         100,
         72
@@ -28,9 +28,9 @@ export async function generatePreview(fontCssUrl: string, fontName: string, outp
         <path d="${svgPath}" fill="black"/>
     </svg>
 `;
-    const PNG_PATH = join(outputPath, 'png', `${fontNameId}, regular.png`)
-    const WEBP_PATH = join(outputPath, 'webp', `${fontNameId}, regular.webp`)
-    const SVG_PATH = join(outputPath, 'svg', `${fontNameId}, regular.svg`)
+    const PNG_PATH = join(outputPath, fontNameId, 'png', 'regular.png')
+    const WEBP_PATH = join(outputPath, fontNameId, 'webp', 'regular.webp')
+    const SVG_PATH = join(outputPath, fontNameId, 'svg', 'regular.svg')
 
     await sharp(Buffer.from(svg))
         .png()
