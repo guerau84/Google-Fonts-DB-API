@@ -1,80 +1,92 @@
 import { Hono } from 'hono'
-import fonts from '../data/fonts.json' with { type: 'json' }
+import { readOnlyDb } from '../db/client.js'
 
-interface FontDesigner {
-    name: string;
-}
+const searchApp = new Hono()
 
-interface FontAxis {
-    tag: string;
-    min: number;
-    max: number;
-}
-
-interface FontLinks {
-    googleFonts: string;
-    repository: string;
-}
-
-interface FontCss {
-    url: string;
-}
-
-interface FontPreviews {
-    svg: string;
-    png: string;
-    webp: string;
-}
-
-interface Font {
-    id: string;
-    family: string;
-    category: string;
-    designer: FontDesigner;
-    license: string;
-    dateAdded: string;
-    subsets: string[];
-    styles: string[];
-    weights: number[];
-    variable: boolean;
-    axes: FontAxis[];
-    links: FontLinks;
-    css: FontCss;
-    previews: FontPreviews;
-}
-
-const search = new Hono()
-
-search.get('/search/:query', (c) => {
+searchApp.get('/search/:query', async (c) => {
     const { query } = c.req.param()
-    const { limit, category, designer, license, subset } = c.req.query()
+    const { limit, category, designer, license, subset, page = '1' } = c.req.query()
 
-    const parsedLimit = Number(limit)
-    const limitNumber =
-        limit === 'false'
-            ? fonts.length
-            : Number.isInteger(parsedLimit) && parsedLimit > 0
-                ? Math.min(parsedLimit, 100)
-                : 20
+    const pageNumber = Math.max(Number(page) || 1, 1)
+    const limitNumber = Math.min(
+        Math.max(Number(limit) || 20, 1),
+        100
+    )
+    const offset = (pageNumber - 1) * limitNumber;
 
-    const normalize = (value: string) =>
-        value.trim().toLowerCase().replace(/\s+/g, ' ')
+    const conditions: string[] = []
+    const args: (string | number)[] = []
 
-    let fontsList = fonts.filter((font: Font) => normalize(font.family).includes(normalize(query)))
+    if (query) {
+        conditions.push('family LIKE ?')
+        args.push(`%${query}%`)
+    }
+
     if (category) {
-        fontsList = fontsList.filter((font: Font) => font.category.toLowerCase().replace(" ", "-") === category.toLowerCase().replace(" ", "-"))
-    }
-    if (designer) {
-        fontsList = fontsList.filter((font: Font) => font.designer?.name.toLowerCase().replace(" ", "+") === designer.toLowerCase().replace(" ", "+"))
-    }
-    if (license) {
-        fontsList = fontsList.filter((font: Font) => font.license.toUpperCase() === license.toUpperCase())
-    }
-    if (subset) {
-        fontsList = fontsList.filter((font: Font) => font.subsets.includes(subset.toLowerCase().replace(" ", "-")))
+        conditions.push('category LIKE ?')
+        args.push(`%${category}%`)
     }
 
-    return c.json({ query: query, total: fontsList.length, limit: limitNumber, results: fontsList.slice(0, limitNumber) })
+    if (designer) {
+        conditions.push('designer LIKE ?')
+        args.push(`%${designer}%`)
+    }
+
+    if (license) {
+        conditions.push('license = ?')
+        args.push(license)
+    }
+
+    if (subset) {
+        conditions.push('subsets LIKE ?')
+        args.push(`%"${subset}"%`)
+    }
+
+    const where =
+        conditions.length > 0
+            ? `WHERE ${conditions.join(' AND ')}`
+            : ''
+
+    const countResult = await readOnlyDb.execute({
+        sql: `
+      SELECT COUNT(*) as total
+      FROM fonts
+      ${where}
+    `,
+        args,
+    })
+
+    const total = Number(countResult.rows[0].total)
+
+    const result = await readOnlyDb.execute({
+        sql: `
+      SELECT
+        id,
+        family,
+        category,
+        designer,
+        license,
+        subsets
+      FROM fonts
+      ${where}
+      ORDER BY family
+      LIMIT ? OFFSET ?
+    `,
+        args: [
+            ...args,
+            limitNumber,
+            offset,
+        ],
+    })
+
+    return c.json({
+        query: query,
+        page: pageNumber,
+        limit: limitNumber,
+        total,
+        totalPages: Math.ceil(total / limitNumber),
+        results: result.rows,
+    })
 })
 
-export default search
+export default searchApp

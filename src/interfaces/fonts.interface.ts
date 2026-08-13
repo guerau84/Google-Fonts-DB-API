@@ -23,7 +23,7 @@ interface FontPreviews {
     webp: string;
 }
 
-interface Font {
+export interface Font {
     id: string;
     family: string;
     category: string;
