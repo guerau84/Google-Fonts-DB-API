@@ -1,16 +1,11 @@
 import { Hono } from 'hono'
 import subsets from './data/subsets.json' with { type: 'json' }
+import compactSubsets from './data/subsets.compact.json' with { type: 'json' }
 
 const subsetsApp = new Hono()
 
 subsetsApp.get('/', (c) => {
-    const subsetsList = [...new Set(subsets.subsets.map((subset: any) => {
-        return {
-            id: subset.id,
-            name: subset.name,
-            count: subset.count,
-        }
-    }))]
+    const subsetsList = [...new Set(compactSubsets.subsets.map((subset: any) => subset))]
     return c.json(subsetsList)
 }).get('/:subsetId', (c) => {
     const subsetId = c.req.param('subsetId')

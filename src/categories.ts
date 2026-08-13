@@ -1,13 +1,12 @@
 import { Hono } from 'hono'
 import categories from './data/categories.json' with { type: 'json' }
+import compactCategories from './data/categories.compact.json' with { type: 'json' }
 
 const categoriesApp = new Hono()
 
 categoriesApp.get('/', (c) => {
-    // LIST ALL CATEGORIES
-    return c.json(categories)
+    return c.json(compactCategories)
 }).get('/:category', (c) => {
-    // GET CATEGORY BY NAME
     const category = c.req.param('category')
     if (!category) {
         return c.notFound()

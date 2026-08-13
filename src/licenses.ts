@@ -1,21 +1,32 @@
 import { Hono } from 'hono'
 import fonts from './data/fonts.json' with { type: 'json' }
+import { readOnlyDb } from './db/client.js'
 
 const licensesApp = new Hono()
 
-licensesApp.get('/', (c) => {
-    const licenses = [...new Set(fonts.map((font: any) => font.license))]
-    return c.json(licenses)
-}).get('/:licenseId', (c) => {
-    const licenseId = c.req.param('licenseId')
-    if (!licenseId) {
+licensesApp.get('/', async (c) => {
+    const result = await readOnlyDb.execute(`
+    SELECT DISTINCT license
+    FROM fonts
+    WHERE license IS NOT NULL
+      AND license != ''
+    ORDER BY license
+  `)
+
+    return c.json(result.rows.map(row => row.license))
+
+}).get('/:licenseId', async (c) => {
+    const licenseId = c.req.param('licenseId').toUpperCase()
+    const { rows } = await readOnlyDb.execute({
+        sql: 'SELECT * FROM fonts WHERE license = ?',
+        args: [licenseId]
+    })
+
+    if (rows.length === 0) {
         return c.notFound()
     }
-    const license = fonts.filter((font: any) => font.license === licenseId.toUpperCase())
-    if (license.length === 0) {
-        return c.notFound()
-    }
-    return c.json(license)
+
+    return c.json(rows)
 })
 
 export default licensesApp
