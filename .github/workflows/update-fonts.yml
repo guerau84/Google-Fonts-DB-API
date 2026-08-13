@@ -42,10 +42,11 @@ jobs:
           node -e "require('fs').writeFileSync('src/data/workflow-state.json', JSON.stringify({ lastCommit: process.env.HEAD_HASH }, null, 4))"
 
       - name: Detect relevant changes
+        id: detect_changes
         run: |
           if [ -z "$OLD_COMMIT" ]; then
             echo "No previous state — full run"
-            echo "HAS_CHANGES=true" >> "$GITHUB_ENV"
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
             touch "$GITHUB_WORKSPACE/changed-files.txt"
             exit 0
           fi
@@ -54,13 +55,13 @@ jobs:
           cat "$GITHUB_WORKSPACE/changed-files.txt"
           RELEVANT=$(grep -E '^(ofl|apache|ufl|catalog)/' "$GITHUB_WORKSPACE/changed-files.txt" || true)
           if [ -n "$RELEVANT" ]; then
-            echo "HAS_CHANGES=true" >> "$GITHUB_ENV"
+            echo "has_changes=true" >> "$GITHUB_OUTPUT"
           else
-            echo "HAS_CHANGES=false" >> "$GITHUB_ENV"
+            echo "has_changes=false" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Update fonts
-        if: env.HAS_CHANGES == 'true'
+        if: steps.detect_changes.outputs.has_changes == 'true'
         run: npx tsx src/scripts/update.ts
 
       - name: Commit and push changes
