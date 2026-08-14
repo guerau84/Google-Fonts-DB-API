@@ -1,7 +1,3 @@
-[build]
-  edge_functions = "edge-functions"
-
-[[redirects]]
-  from = "/*"
-  to = "/.netlify/edge-functions/api"
-  status = 200
+[[edge_functions]]
+  path = "/*"
+  function = "api"
