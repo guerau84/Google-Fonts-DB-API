@@ -9,7 +9,7 @@ png.get('/:font/png', (c) => {
     }
     const fontStyle = c.req.query('style')?.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "-")
     // future: add support for multiple styles
-    return c.redirect(`/public/fonts/${font}/png/regular.png`)
+    return c.redirect(`/fonts/${font}/png/regular.png`)
 })
 
 export default png

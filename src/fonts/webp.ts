@@ -9,7 +9,7 @@ webp.get('/:font/webp', (c) => {
     }
     const fontStyle = c.req.query('style')?.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, "-")
     // future: add support for multiple styles
-    return c.redirect(`/public/fonts/${font}/webp/regular.webp`)
+    return c.redirect(`/fonts/${font}/webp/regular.webp`)
 })
 
 export default webp

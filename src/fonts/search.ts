@@ -79,13 +79,24 @@ searchApp.get('/search/:query', async (c) => {
         ],
     })
 
+    const formatedResult = result.rows.map((font) => {
+        return {
+            id: font.id,
+            family: font.family,
+            category: font.category,
+            designer: font.designer,
+            license: font.license,
+            subsets: typeof font.subsets === 'string' ? JSON.parse(font.subsets) : font.subsets,
+        }
+    })
+
     return c.json({
         query: query,
         page: pageNumber,
         limit: limitNumber,
         total,
         totalPages: Math.ceil(total / limitNumber),
-        results: result.rows,
+        results: formatedResult,
     })
 })
 
