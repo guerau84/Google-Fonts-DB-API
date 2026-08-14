@@ -1,4 +1,5 @@
-import { readdir, readFile, writeFile, access } from 'node:fs/promises'
+import fs from 'node:fs'
+const { readdir, readFile, writeFile, access } = fs.promises
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 

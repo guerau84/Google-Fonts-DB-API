@@ -2,7 +2,8 @@ import opentype from "opentype.js";
 import sharp from "sharp";
 import { join } from "node:path";
 import { decompress } from "woff2-encoder";
-import { writeFile } from "node:fs/promises";
+import fs from "node:fs";
+const { writeFile } = fs.promises;
 
 export async function generatePreview(fontCssUrl: string, fontName: string, outputPath: string) {
     const fontNameId = fontName.replace(/\s/g, '-').toLowerCase();
