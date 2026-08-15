@@ -11,9 +11,18 @@ permissions:
 jobs:
   update-fonts:
     runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        branch:
+          - main
+          - deploy/netlify
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
+        with:
+          ref: ${{ matrix.branch }}
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -67,5 +76,6 @@ jobs:
       - name: Commit and push changes
         uses: EndBug/add-and-commit@v9
         with:
-          message: 'chore: update fonts'
+          message: 'chore: update fonts (${{ matrix.branch }})'
           add: 'src/data public/fonts'
+          branch: ${{ matrix.branch }}
