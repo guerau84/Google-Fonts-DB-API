@@ -71,6 +71,10 @@ jobs:
 
       - name: Update fonts
         if: steps.detect_changes.outputs.has_changes == 'true'
+        env:
+          TURSO_DATABASE_URL: ${{ secrets.TURSO_DATABASE_URL }}
+          TURSO_AUTH_TOKEN: ${{ secrets.TURSO_AUTH_TOKEN }}
+          TURSO_AUTH_TOKEN_READ_ONLY: ${{ secrets.TURSO_AUTH_TOKEN_READ_ONLY }}
         run: npx tsx src/scripts/update.ts
 
       - name: Commit and push changes
