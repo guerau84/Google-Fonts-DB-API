@@ -287,7 +287,11 @@ async function main(): Promise<void> {
             const entry = buildFontEntry(dir.name, pb)
             if (existingIds.has(entry.id)) continue
             existingIds.add(entry.id)
-            await generatePreview(buildCssUrl(pb), pb.name, PREVIEWS_DIR)
+            try {
+                await generatePreview(buildCssUrl(pb), pb.name, PREVIEWS_DIR)
+            } catch (err) {
+                console.error(`Failed to generate preview for ${pb.name}:`, err)
+            }
             await updateDB(entry)
             newEntries.push(entry)
             if (!pb.repositoryUrl) noRepository.push(`${licenseDir}/${dir.name}`)
