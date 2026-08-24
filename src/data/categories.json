@@ -3,7 +3,7 @@
     {
       "id": "sans-serif",
       "name": "Sans Serif",
-      "count": 756,
+      "count": 757,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -64,6 +64,7 @@
         "arya",
         "asap",
         "asap-condensed",
+        "asap-sharp",
         "asimovian",
         "assistant",
         "asta-sans",

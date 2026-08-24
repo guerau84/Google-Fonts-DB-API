@@ -3,7 +3,7 @@
     {
       "id": "menu",
       "name": "Menu",
-      "count": 2017,
+      "count": 2018,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -129,6 +129,7 @@
         "arya",
         "asap",
         "asap-condensed",
+        "asap-sharp",
         "asar",
         "asimovian",
         "asset",
@@ -2027,7 +2028,7 @@
     {
       "id": "latin",
       "name": "Latin",
-      "count": 1875,
+      "count": 1876,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -2151,6 +2152,7 @@
         "arya",
         "asap",
         "asap-condensed",
+        "asap-sharp",
         "asar",
         "asimovian",
         "asset",
@@ -3909,7 +3911,7 @@
     {
       "id": "latin-ext",
       "name": "Latin Ext",
-      "count": 1548,
+      "count": 1549,
       "families": [
         "abeezee",
         "abhaya-libre",
@@ -4010,6 +4012,7 @@
         "arya",
         "asap",
         "asap-condensed",
+        "asap-sharp",
         "asar",
         "asimovian",
         "asset",
@@ -5464,7 +5467,7 @@
     {
       "id": "vietnamese",
       "name": "Vietnamese",
-      "count": 537,
+      "count": 538,
       "families": [
         "afacad",
         "afacad-flux",
@@ -5509,6 +5512,7 @@
         "arsenal-sc",
         "asap",
         "asap-condensed",
+        "asap-sharp",
         "asimovian",
         "athiti",
         "babylonica",

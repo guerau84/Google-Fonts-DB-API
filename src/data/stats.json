@@ -1,21 +1,21 @@
 {
-  "fonts": 2022,
+  "fonts": 2023,
   "categories": 5,
   "subsets": 182,
   "designers": 604,
   "variable": {
-    "families": 581,
-    "percentage": 28.73
+    "families": 582,
+    "percentage": 28.77
   },
   "styles": {
-    "normal": 2020,
-    "italic": 353
+    "normal": 2021,
+    "italic": 354
   },
   "weights": {
     "100": 56,
     "200": 75,
     "300": 147,
-    "400": 2019,
+    "400": 2020,
     "500": 140,
     "600": 124,
     "700": 321,
@@ -24,17 +24,17 @@
   },
   "breakdown": {
     "categories": {
-      "sans-serif": 756,
+      "sans-serif": 757,
       "display": 503,
       "serif": 362,
       "handwriting": 355,
       "monospace": 46
     },
     "subsets": {
-      "menu": 2017,
-      "latin": 1875,
-      "latin-ext": 1548,
-      "vietnamese": 537,
+      "menu": 2018,
+      "latin": 1876,
+      "latin-ext": 1549,
+      "vietnamese": 538,
       "cyrillic": 307,
       "cyrillic-ext": 244,
       "greek": 128,
@@ -216,8 +216,8 @@
     }
   },
   "axes": {
-    "wght": 564,
-    "wdth": 106,
+    "wght": 565,
+    "wdth": 107,
     "opsz": 27,
     "slnt": 22,
     "ELSH": 15,
