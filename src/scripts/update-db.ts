@@ -1,4 +1,3 @@
-import fonts from '../data/fonts.json' with { type: 'json' }
 import { readAndWriteDb } from '../db/client.js'
 
 export interface Font {
