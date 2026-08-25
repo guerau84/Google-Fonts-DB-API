@@ -4870,6 +4870,54 @@
     }
   },
   {
+    "id": "asap-sharp",
+    "family": "Asap Sharp",
+    "category": "sans-serif",
+    "designer": {
+      "name": "Omnibus-Type"
+    },
+    "license": "OFL",
+    "dateAdded": "2026-08-10",
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu",
+      "vietnamese"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "weights": [
+      400
+    ],
+    "variable": true,
+    "axes": [
+      {
+        "tag": "wdth",
+        "min": 75,
+        "max": 125
+      },
+      {
+        "tag": "wght",
+        "min": 100,
+        "max": 900
+      }
+    ],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Asap+Sharp",
+      "repository": "https://github.com/Omnibus-Type/Asap_Sharp"
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Asap+Sharp:wdth@75..125;wght@100..900&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/asap-sharp/svg",
+      "png": "fonts/asap-sharp/png",
+      "webp": "fonts/asap-sharp/webp"
+    }
+  },
+  {
     "id": "asar",
     "family": "Asar",
     "category": "serif",

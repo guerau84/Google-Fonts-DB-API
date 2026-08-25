@@ -2663,6 +2663,30 @@
       "axes": []
     },
     {
+      "id": "asap-sharp",
+      "family": "Asap Sharp",
+      "category": "sans-serif",
+      "designer": "Omnibus-Type",
+      "variable": true,
+      "styles": [
+        "normal",
+        "italic"
+      ],
+      "weights": [
+        400
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext",
+        "menu",
+        "vietnamese"
+      ],
+      "axes": [
+        "wdth",
+        "wght"
+      ]
+    },
+    {
       "id": "asar",
       "family": "Asar",
       "category": "serif",
@@ -42781,5 +42805,5 @@
       "axes": []
     }
   ],
-  "total": 2022
+  "total": 2023
 }
