@@ -3,7 +3,7 @@
     {
       "id": "sans-serif",
       "name": "Sans Serif",
-      "count": 757,
+      "count": 759,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -123,6 +123,7 @@
         "chivo",
         "chivo-mono",
         "chocolate-classical-sans",
+        "clarity-city",
         "comme",
         "commissioner",
         "convergence",
@@ -273,6 +274,7 @@
         "koho",
         "kosugi",
         "kosugi-maru",
+        "kripa",
         "krona-one",
         "krub",
         "kufam",
@@ -767,7 +769,7 @@
     {
       "id": "serif",
       "name": "Serif",
-      "count": 362,
+      "count": 364,
       "families": [
         "abhaya-libre",
         "abyssinica-sil",
@@ -915,6 +917,7 @@
         "inknut-antiqua",
         "inria-serif",
         "instrument-serif",
+        "isometra",
         "jacques-francois",
         "joan",
         "jomolhari",
@@ -948,6 +951,7 @@
         "libertinus-serif",
         "libre-baskerville",
         "libre-bodoni",
+        "libre-caslon-condensed",
         "libre-caslon-display",
         "libre-caslon-text",
         "linden-hill",

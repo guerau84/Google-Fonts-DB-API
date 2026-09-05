@@ -3,22 +3,22 @@
     {
       "id": "menu",
       "name": "Menu",
-      "count": 2018
+      "count": 2022
     },
     {
       "id": "latin",
       "name": "Latin",
-      "count": 1876
+      "count": 1880
     },
     {
       "id": "latin-ext",
       "name": "Latin Ext",
-      "count": 1549
+      "count": 1553
     },
     {
       "id": "vietnamese",
       "name": "Vietnamese",
-      "count": 538
+      "count": 539
     },
     {
       "id": "cyrillic",
@@ -58,7 +58,7 @@
     {
       "id": "devanagari",
       "name": "Devanagari",
-      "count": 65
+      "count": 66
     },
     {
       "id": "hebrew",
