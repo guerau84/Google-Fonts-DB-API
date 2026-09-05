@@ -1,21 +1,21 @@
 {
-  "fonts": 2023,
+  "fonts": 2027,
   "categories": 5,
   "subsets": 182,
-  "designers": 604,
+  "designers": 608,
   "variable": {
-    "families": 582,
-    "percentage": 28.77
+    "families": 585,
+    "percentage": 28.86
   },
   "styles": {
-    "normal": 2021,
-    "italic": 354
+    "normal": 2025,
+    "italic": 356
   },
   "weights": {
     "100": 56,
     "200": 75,
     "300": 147,
-    "400": 2020,
+    "400": 2024,
     "500": 140,
     "600": 124,
     "700": 321,
@@ -24,17 +24,17 @@
   },
   "breakdown": {
     "categories": {
-      "sans-serif": 757,
+      "sans-serif": 759,
       "display": 503,
-      "serif": 362,
+      "serif": 364,
       "handwriting": 355,
       "monospace": 46
     },
     "subsets": {
-      "menu": 2018,
-      "latin": 1876,
-      "latin-ext": 1549,
-      "vietnamese": 538,
+      "menu": 2022,
+      "latin": 1880,
+      "latin-ext": 1553,
+      "vietnamese": 539,
       "cyrillic": 307,
       "cyrillic-ext": 244,
       "greek": 128,
@@ -42,7 +42,7 @@
       "greek-ext": 74,
       "symbols": 72,
       "japanese": 69,
-      "devanagari": 65,
+      "devanagari": 66,
       "hebrew": 62,
       "arabic": 60,
       "korean": 47,
@@ -216,7 +216,7 @@
     }
   },
   "axes": {
-    "wght": 565,
+    "wght": 568,
     "wdth": 107,
     "opsz": 27,
     "slnt": 22,

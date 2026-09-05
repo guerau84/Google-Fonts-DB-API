@@ -14720,6 +14720,48 @@
     }
   },
   {
+    "id": "clarity-city",
+    "family": "Clarity City",
+    "category": "sans-serif",
+    "designer": {
+      "name": "VMware, Chris Simpson"
+    },
+    "license": "OFL",
+    "dateAdded": "2026-08-27",
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "weights": [
+      400
+    ],
+    "variable": true,
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 100,
+        "max": 900
+      }
+    ],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Clarity+City",
+      "repository": "https://github.com/googlefonts/clarity-city"
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Clarity+City:wght@100..900&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/clarity-city/svg",
+      "png": "fonts/clarity-city/png",
+      "webp": "fonts/clarity-city/webp"
+    }
+  },
+  {
     "id": "clicker-script",
     "family": "Clicker Script",
     "category": "handwriting",
@@ -29037,6 +29079,41 @@
     }
   },
   {
+    "id": "isometra",
+    "family": "Isometra",
+    "category": "serif",
+    "designer": {
+      "name": "Ben Dunkle"
+    },
+    "license": "OFL",
+    "dateAdded": "2026-08-21",
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "weights": [
+      400
+    ],
+    "variable": false,
+    "axes": [],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Isometra",
+      "repository": "https://github.com/field2/isometra"
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Isometra&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/isometra/svg",
+      "png": "fonts/isometra/png",
+      "webp": "fonts/isometra/webp"
+    }
+  },
+  {
     "id": "istok-web",
     "family": "Istok Web",
     "category": "sans-serif",
@@ -32780,6 +32857,49 @@
     }
   },
   {
+    "id": "kripa",
+    "family": "Kripa",
+    "category": "sans-serif",
+    "designer": {
+      "name": "Kedar Gadge"
+    },
+    "license": "OFL",
+    "dateAdded": "2026-09-01",
+    "subsets": [
+      "devanagari",
+      "latin",
+      "latin-ext",
+      "menu",
+      "vietnamese"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "weights": [
+      400
+    ],
+    "variable": true,
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 100,
+        "max": 900
+      }
+    ],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Kripa",
+      "repository": "https://github.com/kedar9/kripa"
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Kripa:wght@100..900&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/kripa/svg",
+      "png": "fonts/kripa/png",
+      "webp": "fonts/kripa/webp"
+    }
+  },
+  {
     "id": "kristi",
     "family": "Kristi",
     "category": "handwriting",
@@ -34743,6 +34863,48 @@
       "svg": "fonts/libre-bodoni/svg",
       "png": "fonts/libre-bodoni/png",
       "webp": "fonts/libre-bodoni/webp"
+    }
+  },
+  {
+    "id": "libre-caslon-condensed",
+    "family": "Libre Caslon Condensed",
+    "category": "serif",
+    "designer": {
+      "name": "Pablo Impallari, Rodrigo Fuenzalida, Ertekin Erdin"
+    },
+    "license": "OFL",
+    "dateAdded": "2026-08-10",
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "weights": [
+      400
+    ],
+    "variable": true,
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 400,
+        "max": 700
+      }
+    ],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Libre+Caslon+Condensed",
+      "repository": "https://github.com/ertekinno/libre-caslon-condensed"
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Libre+Caslon+Condensed:wght@400..700&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/libre-caslon-condensed/svg",
+      "png": "fonts/libre-caslon-condensed/png",
+      "webp": "fonts/libre-caslon-condensed/webp"
     }
   },
   {

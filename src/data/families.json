@@ -7921,6 +7921,28 @@
       "axes": []
     },
     {
+      "id": "clarity-city",
+      "family": "Clarity City",
+      "category": "sans-serif",
+      "designer": "VMware, Chris Simpson",
+      "variable": true,
+      "styles": [
+        "normal",
+        "italic"
+      ],
+      "weights": [
+        400
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext",
+        "menu"
+      ],
+      "axes": [
+        "wght"
+      ]
+    },
+    {
       "id": "clicker-script",
       "family": "Clicker Script",
       "category": "handwriting",
@@ -15838,6 +15860,25 @@
       "axes": []
     },
     {
+      "id": "isometra",
+      "family": "Isometra",
+      "category": "serif",
+      "designer": "Ben Dunkle",
+      "variable": false,
+      "styles": [
+        "normal"
+      ],
+      "weights": [
+        400
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext",
+        "menu"
+      ],
+      "axes": []
+    },
+    {
       "id": "istok-web",
       "family": "Istok Web",
       "category": "sans-serif",
@@ -17913,6 +17954,29 @@
       ]
     },
     {
+      "id": "kripa",
+      "family": "Kripa",
+      "category": "sans-serif",
+      "designer": "Kedar Gadge",
+      "variable": true,
+      "styles": [
+        "normal"
+      ],
+      "weights": [
+        400
+      ],
+      "subsets": [
+        "devanagari",
+        "latin",
+        "latin-ext",
+        "menu",
+        "vietnamese"
+      ],
+      "axes": [
+        "wght"
+      ]
+    },
+    {
       "id": "kristi",
       "family": "Kristi",
       "category": "handwriting",
@@ -18989,6 +19053,28 @@
         "latin-ext",
         "menu",
         "vietnamese"
+      ],
+      "axes": [
+        "wght"
+      ]
+    },
+    {
+      "id": "libre-caslon-condensed",
+      "family": "Libre Caslon Condensed",
+      "category": "serif",
+      "designer": "Pablo Impallari, Rodrigo Fuenzalida, Ertekin Erdin",
+      "variable": true,
+      "styles": [
+        "normal",
+        "italic"
+      ],
+      "weights": [
+        400
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext",
+        "menu"
       ],
       "axes": [
         "wght"
@@ -42805,5 +42891,5 @@
       "axes": []
     }
   ],
-  "total": 2023
+  "total": 2027
 }
