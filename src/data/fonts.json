@@ -24405,6 +24405,80 @@
     }
   },
   {
+    "id": "google-sans-flex",
+    "family": "Google Sans Flex",
+    "category": "sans-serif",
+    "designer": {
+      "name": "Google"
+    },
+    "license": "",
+    "dateAdded": "2024-11-21",
+    "subsets": [
+      "canadian-aboriginal",
+      "cherokee",
+      "latin",
+      "latin-ext",
+      "math",
+      "menu",
+      "nushu",
+      "symbols",
+      "syriac",
+      "tifinagh",
+      "vietnamese"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "weights": [
+      400
+    ],
+    "variable": true,
+    "axes": [
+      {
+        "tag": "GRAD",
+        "min": 0,
+        "max": 100
+      },
+      {
+        "tag": "ROND",
+        "min": 0,
+        "max": 100
+      },
+      {
+        "tag": "opsz",
+        "min": 6,
+        "max": 144
+      },
+      {
+        "tag": "slnt",
+        "min": -10,
+        "max": 0
+      },
+      {
+        "tag": "wdth",
+        "min": 25,
+        "max": 151
+      },
+      {
+        "tag": "wght",
+        "min": 1,
+        "max": 1000
+      }
+    ],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Google+Sans+Flex",
+      "repository": ""
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Google+Sans+Flex:GRAD@0..100;ROND@0..100;opsz@6..144;slnt@-10..0;wdth@25..151;wght@1..1000&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/google-sans-flex/svg",
+      "png": "fonts/google-sans-flex/png",
+      "webp": "fonts/google-sans-flex/webp"
+    }
+  },
+  {
     "id": "gorditas",
     "family": "Gorditas",
     "category": "display",

@@ -3,7 +3,7 @@
     {
       "id": "menu",
       "name": "Menu",
-      "count": 2022,
+      "count": 2023,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -625,6 +625,7 @@
         "goldman",
         "golos-text",
         "google-sans-code",
+        "google-sans-flex",
         "gorditas",
         "gothic-a1",
         "gotu",
@@ -2032,7 +2033,7 @@
     {
       "id": "latin",
       "name": "Latin",
-      "count": 1880,
+      "count": 1881,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -2650,6 +2651,7 @@
         "goldman",
         "golos-text",
         "google-sans-code",
+        "google-sans-flex",
         "gorditas",
         "gothic-a1",
         "gotu",
@@ -3919,7 +3921,7 @@
     {
       "id": "latin-ext",
       "name": "Latin Ext",
-      "count": 1553,
+      "count": 1554,
       "families": [
         "abeezee",
         "abhaya-libre",
@@ -4419,6 +4421,7 @@
         "goldman",
         "golos-text",
         "google-sans-code",
+        "google-sans-flex",
         "gothic-a1",
         "gotu",
         "gowun-batang",
@@ -5479,7 +5482,7 @@
     {
       "id": "vietnamese",
       "name": "Vietnamese",
-      "count": 539,
+      "count": 540,
       "families": [
         "afacad",
         "afacad-flux",
@@ -5693,6 +5696,7 @@
         "gluten",
         "goldman",
         "google-sans-code",
+        "google-sans-flex",
         "gothic-a1",
         "gotu",
         "gowun-batang",
@@ -6725,7 +6729,7 @@
     {
       "id": "math",
       "name": "Math",
-      "count": 78,
+      "count": 79,
       "families": [
         "afacad",
         "alike",
@@ -6738,6 +6742,7 @@
         "borel",
         "david-libre",
         "google-sans-code",
+        "google-sans-flex",
         "hedvig-letters-sans",
         "hedvig-letters-serif",
         "heebo",
@@ -6891,7 +6896,7 @@
     {
       "id": "symbols",
       "name": "Symbols",
-      "count": 72,
+      "count": 73,
       "families": [
         "afacad",
         "alike",
@@ -6904,6 +6909,7 @@
         "borel",
         "david-libre",
         "google-sans-code",
+        "google-sans-flex",
         "hedvig-letters-sans",
         "hedvig-letters-serif",
         "heebo",
@@ -7634,6 +7640,20 @@
       ]
     },
     {
+      "id": "syriac",
+      "name": "Syriac",
+      "count": 7,
+      "families": [
+        "google-sans-code",
+        "google-sans-flex",
+        "idiqlat",
+        "noto-sans-syriac",
+        "noto-sans-syriac-eastern",
+        "noto-sans-syriac-western",
+        "ramsina"
+      ]
+    },
+    {
       "id": "braille",
       "name": "Braille",
       "count": 6,
@@ -7686,19 +7706,6 @@
       ]
     },
     {
-      "id": "syriac",
-      "name": "Syriac",
-      "count": 6,
-      "families": [
-        "google-sans-code",
-        "idiqlat",
-        "noto-sans-syriac",
-        "noto-sans-syriac-eastern",
-        "noto-sans-syriac-western",
-        "ramsina"
-      ]
-    },
-    {
       "id": "armenian",
       "name": "Armenian",
       "count": 5,
@@ -7708,6 +7715,30 @@
         "iosevka-charon-mono",
         "noto-sans-armenian",
         "noto-serif-armenian"
+      ]
+    },
+    {
+      "id": "canadian-aboriginal",
+      "name": "Canadian Aboriginal",
+      "count": 5,
+      "families": [
+        "bjcree",
+        "google-sans-code",
+        "google-sans-flex",
+        "noto-sans-canadian-aboriginal",
+        "radio-canada"
+      ]
+    },
+    {
+      "id": "cherokee",
+      "name": "Cherokee",
+      "count": 5,
+      "families": [
+        "explora",
+        "genos",
+        "google-sans-code",
+        "google-sans-flex",
+        "noto-sans-cherokee"
       ]
     },
     {
@@ -7734,28 +7765,6 @@
       ]
     },
     {
-      "id": "canadian-aboriginal",
-      "name": "Canadian Aboriginal",
-      "count": 4,
-      "families": [
-        "bjcree",
-        "google-sans-code",
-        "noto-sans-canadian-aboriginal",
-        "radio-canada"
-      ]
-    },
-    {
-      "id": "cherokee",
-      "name": "Cherokee",
-      "count": 4,
-      "families": [
-        "explora",
-        "genos",
-        "google-sans-code",
-        "noto-sans-cherokee"
-      ]
-    },
-    {
       "id": "lisu",
       "name": "Lisu",
       "count": 4,
@@ -7764,6 +7773,17 @@
         "lxgw-wenkai-mono-tc",
         "lxgw-wenkai-tc",
         "noto-sans-lisu"
+      ]
+    },
+    {
+      "id": "tifinagh",
+      "name": "Tifinagh",
+      "count": 4,
+      "families": [
+        "akatab",
+        "google-sans-flex",
+        "noto-sans-tifinagh",
+        "tirra"
       ]
     },
     {
@@ -7797,6 +7817,16 @@
       ]
     },
     {
+      "id": "nushu",
+      "name": "Nushu",
+      "count": 3,
+      "families": [
+        "google-sans-flex",
+        "noto-sans-nushu",
+        "noto-traditional-nushu"
+      ]
+    },
+    {
       "id": "runic",
       "name": "Runic",
       "count": 3,
@@ -7814,16 +7844,6 @@
         "jomolhari",
         "noto-serif-tibetan",
         "uchen"
-      ]
-    },
-    {
-      "id": "tifinagh",
-      "name": "Tifinagh",
-      "count": 3,
-      "families": [
-        "akatab",
-        "noto-sans-tifinagh",
-        "tirra"
       ]
     },
     {
@@ -7923,15 +7943,6 @@
       "families": [
         "dai-banna-sil",
         "noto-sans-new-tai-lue"
-      ]
-    },
-    {
-      "id": "nushu",
-      "name": "Nushu",
-      "count": 2,
-      "families": [
-        "noto-sans-nushu",
-        "noto-traditional-nushu"
       ]
     },
     {
