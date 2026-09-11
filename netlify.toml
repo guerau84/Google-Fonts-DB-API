@@ -1,6 +1,13 @@
 [functions]
   node_bundler = "esbuild"
 
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Methods = "*"
+    Access-Control-Allow-Headers = "*"
+
 [[redirects]]
   from = "/*"
   to = "/.netlify/functions/api"

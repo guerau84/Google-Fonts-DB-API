@@ -1,4 +1,5 @@
 import { Hono } from 'hono'
+import { cors } from 'hono/cors'
 import fonts from './fonts/index.js'
 import categories from './categories.js'
 import designers from './designers.js'
@@ -8,6 +9,8 @@ import stats from './data/stats.json' with { type: 'json' }
 import { readOnlyDb } from './db/client.js'
 
 const app = new Hono()
+
+app.use('*', cors())
 
 app.route('/fonts', fonts)
 app.route('/categories', categories)
