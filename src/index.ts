@@ -1,4 +1,5 @@
 import { Hono } from 'hono'
+import { cors } from 'hono/cors'
 import fonts from './fonts/index.js'
 import categories from './categories.js'
 import designers from './designers.js'
@@ -8,6 +9,17 @@ import stats from './data/stats.json' with { type: 'json' }
 import { readOnlyDb } from './db/client.js'
 
 const app = new Hono()
+
+app.use(
+  '*',
+  cors({
+    origin: '*',
+    allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+    exposeHeaders: ['Content-Length'],
+    maxAge: 600,
+  })
+)
 
 app.route('/fonts', fonts)
 app.route('/categories', categories)
