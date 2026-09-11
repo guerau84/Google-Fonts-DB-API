@@ -13230,6 +13230,40 @@
       ]
     },
     {
+      "id": "google-sans-flex",
+      "family": "Google Sans Flex",
+      "category": "sans-serif",
+      "designer": "Google",
+      "variable": true,
+      "styles": [
+        "normal"
+      ],
+      "weights": [
+        400
+      ],
+      "subsets": [
+        "canadian-aboriginal",
+        "cherokee",
+        "latin",
+        "latin-ext",
+        "math",
+        "menu",
+        "nushu",
+        "symbols",
+        "syriac",
+        "tifinagh",
+        "vietnamese"
+      ],
+      "axes": [
+        "GRAD",
+        "ROND",
+        "opsz",
+        "slnt",
+        "wdth",
+        "wght"
+      ]
+    },
+    {
       "id": "gorditas",
       "family": "Gorditas",
       "category": "display",
@@ -42891,5 +42925,5 @@
       "axes": []
     }
   ],
-  "total": 2027
+  "total": 2028
 }

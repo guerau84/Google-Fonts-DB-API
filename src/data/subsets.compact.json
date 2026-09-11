@@ -3,22 +3,22 @@
     {
       "id": "menu",
       "name": "Menu",
-      "count": 2022
+      "count": 2023
     },
     {
       "id": "latin",
       "name": "Latin",
-      "count": 1880
+      "count": 1881
     },
     {
       "id": "latin-ext",
       "name": "Latin Ext",
-      "count": 1553
+      "count": 1554
     },
     {
       "id": "vietnamese",
       "name": "Vietnamese",
-      "count": 539
+      "count": 540
     },
     {
       "id": "cyrillic",
@@ -38,7 +38,7 @@
     {
       "id": "math",
       "name": "Math",
-      "count": 78
+      "count": 79
     },
     {
       "id": "greek-ext",
@@ -48,7 +48,7 @@
     {
       "id": "symbols",
       "name": "Symbols",
-      "count": 72
+      "count": 73
     },
     {
       "id": "japanese",
@@ -146,6 +146,11 @@
       "count": 9
     },
     {
+      "id": "syriac",
+      "name": "Syriac",
+      "count": 7
+    },
+    {
       "id": "braille",
       "name": "Braille",
       "count": 6
@@ -166,13 +171,18 @@
       "count": 6
     },
     {
-      "id": "syriac",
-      "name": "Syriac",
-      "count": 6
-    },
-    {
       "id": "armenian",
       "name": "Armenian",
+      "count": 5
+    },
+    {
+      "id": "canadian-aboriginal",
+      "name": "Canadian Aboriginal",
+      "count": 5
+    },
+    {
+      "id": "cherokee",
+      "name": "Cherokee",
       "count": 5
     },
     {
@@ -186,18 +196,13 @@
       "count": 4
     },
     {
-      "id": "canadian-aboriginal",
-      "name": "Canadian Aboriginal",
-      "count": 4
-    },
-    {
-      "id": "cherokee",
-      "name": "Cherokee",
-      "count": 4
-    },
-    {
       "id": "lisu",
       "name": "Lisu",
+      "count": 4
+    },
+    {
+      "id": "tifinagh",
+      "name": "Tifinagh",
       "count": 4
     },
     {
@@ -216,6 +221,11 @@
       "count": 3
     },
     {
+      "id": "nushu",
+      "name": "Nushu",
+      "count": 3
+    },
+    {
       "id": "runic",
       "name": "Runic",
       "count": 3
@@ -223,11 +233,6 @@
     {
       "id": "tibetan",
       "name": "Tibetan",
-      "count": 3
-    },
-    {
-      "id": "tifinagh",
-      "name": "Tifinagh",
       "count": 3
     },
     {
@@ -283,11 +288,6 @@
     {
       "id": "new-tai-lue",
       "name": "New Tai Lue",
-      "count": 2
-    },
-    {
-      "id": "nushu",
-      "name": "Nushu",
       "count": 2
     },
     {
