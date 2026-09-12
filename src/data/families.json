@@ -39873,6 +39873,38 @@
       "axes": []
     },
     {
+      "id": "tiny5-duo",
+      "family": "Tiny5 Duo",
+      "category": "display",
+      "designer": "Stefan Schmidt",
+      "variable": true,
+      "styles": [
+        "normal",
+        "italic"
+      ],
+      "weights": [
+        400
+      ],
+      "subsets": [
+        "armenian",
+        "cyrillic",
+        "cyrillic-ext",
+        "greek",
+        "greek-ext",
+        "latin",
+        "latin-ext",
+        "menu",
+        "vietnamese"
+      ],
+      "axes": [
+        "BLED",
+        "JITT",
+        "ROND",
+        "wdth",
+        "wght"
+      ]
+    },
+    {
       "id": "tiro-bangla",
       "family": "Tiro Bangla",
       "category": "serif",
@@ -42925,5 +42957,5 @@
       "axes": []
     }
   ],
-  "total": 2028
+  "total": 2029
 }

@@ -1,21 +1,21 @@
 {
-  "fonts": 2028,
+  "fonts": 2029,
   "categories": 5,
   "subsets": 182,
   "designers": 608,
   "variable": {
-    "families": 586,
-    "percentage": 28.9
+    "families": 587,
+    "percentage": 28.93
   },
   "styles": {
-    "normal": 2026,
-    "italic": 356
+    "normal": 2027,
+    "italic": 357
   },
   "weights": {
     "100": 56,
     "200": 75,
     "300": 147,
-    "400": 2025,
+    "400": 2026,
     "500": 140,
     "600": 124,
     "700": 321,
@@ -25,21 +25,21 @@
   "breakdown": {
     "categories": {
       "sans-serif": 760,
-      "display": 503,
+      "display": 504,
       "serif": 364,
       "handwriting": 355,
       "monospace": 46
     },
     "subsets": {
-      "menu": 2023,
-      "latin": 1881,
-      "latin-ext": 1554,
-      "vietnamese": 540,
-      "cyrillic": 307,
-      "cyrillic-ext": 244,
-      "greek": 128,
+      "menu": 2024,
+      "latin": 1882,
+      "latin-ext": 1555,
+      "vietnamese": 541,
+      "cyrillic": 308,
+      "cyrillic-ext": 245,
+      "greek": 129,
       "math": 79,
-      "greek-ext": 74,
+      "greek-ext": 75,
       "symbols": 73,
       "japanese": 69,
       "devanagari": 66,
@@ -61,11 +61,11 @@
       "sinhala": 10,
       "emoji": 9,
       "syriac": 7,
+      "armenian": 6,
       "braille": 6,
       "ethiopic": 6,
       "lao": 6,
       "oriya": 6,
-      "armenian": 5,
       "canadian-aboriginal": 5,
       "cherokee": 5,
       "myanmar": 5,
@@ -216,8 +216,8 @@
     }
   },
   "axes": {
-    "wght": 569,
-    "wdth": 108,
+    "wght": 570,
+    "wdth": 109,
     "opsz": 28,
     "slnt": 23,
     "ELSH": 15,
@@ -229,10 +229,10 @@
     "XPN2": 6,
     "YPN1": 6,
     "YPN2": 6,
+    "BLED": 4,
     "GRAD": 4,
-    "BLED": 3,
+    "ROND": 4,
     "MORF": 3,
-    "ROND": 3,
     "SCAN": 3,
     "XROT": 3,
     "YROT": 3,
@@ -250,6 +250,7 @@
     "FLAR": 1,
     "HEXP": 1,
     "INFM": 1,
+    "JITT": 1,
     "SHLN": 1,
     "SHRP": 1,
     "SOFT": 1,
