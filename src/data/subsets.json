@@ -3,7 +3,7 @@
     {
       "id": "menu",
       "name": "Menu",
-      "count": 2023,
+      "count": 2024,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -1887,6 +1887,7 @@
         "timmana",
         "tinos",
         "tiny5",
+        "tiny5-duo",
         "tiro-bangla",
         "tiro-devanagari-hindi",
         "tiro-devanagari-marathi",
@@ -2033,7 +2034,7 @@
     {
       "id": "latin",
       "name": "Latin",
-      "count": 1881,
+      "count": 1882,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -3776,6 +3777,7 @@
         "timmana",
         "tinos",
         "tiny5",
+        "tiny5-duo",
         "tiro-bangla",
         "tiro-devanagari-hindi",
         "tiro-devanagari-marathi",
@@ -3921,7 +3923,7 @@
     {
       "id": "latin-ext",
       "name": "Latin Ext",
-      "count": 1554,
+      "count": 1555,
       "families": [
         "abeezee",
         "abhaya-libre",
@@ -5370,6 +5372,7 @@
         "tilt-warp",
         "tinos",
         "tiny5",
+        "tiny5-duo",
         "tiro-bangla",
         "tiro-devanagari-hindi",
         "tiro-devanagari-marathi",
@@ -5482,7 +5485,7 @@
     {
       "id": "vietnamese",
       "name": "Vietnamese",
-      "count": 540,
+      "count": 541,
       "families": [
         "afacad",
         "afacad-flux",
@@ -5986,6 +5989,7 @@
         "tilt-prism",
         "tilt-warp",
         "tinos",
+        "tiny5-duo",
         "tourney",
         "trirong",
         "trispace",
@@ -6029,7 +6033,7 @@
     {
       "id": "cyrillic",
       "name": "Cyrillic",
-      "count": 307,
+      "count": 308,
       "families": [
         "advent-pro",
         "akt",
@@ -6301,6 +6305,7 @@
         "tiktok-sans",
         "tinos",
         "tiny5",
+        "tiny5-duo",
         "train-one",
         "triodion",
         "tuffy",
@@ -6343,7 +6348,7 @@
     {
       "id": "cyrillic-ext",
       "name": "Cyrillic Ext",
-      "count": 244,
+      "count": 245,
       "families": [
         "advent-pro",
         "afacad",
@@ -6569,6 +6574,7 @@
         "tiktok-sans",
         "tinos",
         "tiny5",
+        "tiny5-duo",
         "triodion",
         "tuffy",
         "ubuntu",
@@ -6594,7 +6600,7 @@
     {
       "id": "greek",
       "name": "Greek",
-      "count": 128,
+      "count": 129,
       "families": [
         "advent-pro",
         "akt",
@@ -6707,6 +6713,7 @@
         "tiktok-sans",
         "tinos",
         "tiny5",
+        "tiny5-duo",
         "tuffy",
         "ubuntu",
         "ubuntu-condensed",
@@ -6815,7 +6822,7 @@
     {
       "id": "greek-ext",
       "name": "Greek Ext",
-      "count": 74,
+      "count": 75,
       "families": [
         "akt",
         "alegreya",
@@ -6885,6 +6892,7 @@
         "source-sans-3",
         "teachers",
         "tinos",
+        "tiny5-duo",
         "tuffy",
         "ubuntu",
         "ubuntu-condensed",
@@ -7654,6 +7662,19 @@
       ]
     },
     {
+      "id": "armenian",
+      "name": "Armenian",
+      "count": 6,
+      "families": [
+        "handjet",
+        "iosevka-charon",
+        "iosevka-charon-mono",
+        "noto-sans-armenian",
+        "noto-serif-armenian",
+        "tiny5-duo"
+      ]
+    },
+    {
       "id": "braille",
       "name": "Braille",
       "count": 6,
@@ -7703,18 +7724,6 @@
         "noto-sans-oriya",
         "noto-sans-oriya-ui",
         "noto-serif-oriya"
-      ]
-    },
-    {
-      "id": "armenian",
-      "name": "Armenian",
-      "count": 5,
-      "families": [
-        "handjet",
-        "iosevka-charon",
-        "iosevka-charon-mono",
-        "noto-sans-armenian",
-        "noto-serif-armenian"
       ]
     },
     {

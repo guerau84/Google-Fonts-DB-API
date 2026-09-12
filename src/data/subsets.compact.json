@@ -3,37 +3,37 @@
     {
       "id": "menu",
       "name": "Menu",
-      "count": 2023
+      "count": 2024
     },
     {
       "id": "latin",
       "name": "Latin",
-      "count": 1881
+      "count": 1882
     },
     {
       "id": "latin-ext",
       "name": "Latin Ext",
-      "count": 1554
+      "count": 1555
     },
     {
       "id": "vietnamese",
       "name": "Vietnamese",
-      "count": 540
+      "count": 541
     },
     {
       "id": "cyrillic",
       "name": "Cyrillic",
-      "count": 307
+      "count": 308
     },
     {
       "id": "cyrillic-ext",
       "name": "Cyrillic Ext",
-      "count": 244
+      "count": 245
     },
     {
       "id": "greek",
       "name": "Greek",
-      "count": 128
+      "count": 129
     },
     {
       "id": "math",
@@ -43,7 +43,7 @@
     {
       "id": "greek-ext",
       "name": "Greek Ext",
-      "count": 74
+      "count": 75
     },
     {
       "id": "symbols",
@@ -151,6 +151,11 @@
       "count": 7
     },
     {
+      "id": "armenian",
+      "name": "Armenian",
+      "count": 6
+    },
+    {
       "id": "braille",
       "name": "Braille",
       "count": 6
@@ -169,11 +174,6 @@
       "id": "oriya",
       "name": "Oriya",
       "count": 6
-    },
-    {
-      "id": "armenian",
-      "name": "Armenian",
-      "count": 5
     },
     {
       "id": "canadian-aboriginal",

@@ -73324,6 +73324,74 @@
     }
   },
   {
+    "id": "tiny5-duo",
+    "family": "Tiny5 Duo",
+    "category": "display",
+    "designer": {
+      "name": "Stefan Schmidt"
+    },
+    "license": "OFL",
+    "dateAdded": "2026-09-03",
+    "subsets": [
+      "armenian",
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "greek-ext",
+      "latin",
+      "latin-ext",
+      "menu",
+      "vietnamese"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "weights": [
+      400
+    ],
+    "variable": true,
+    "axes": [
+      {
+        "tag": "BLED",
+        "min": 0,
+        "max": 100
+      },
+      {
+        "tag": "JITT",
+        "min": 0,
+        "max": 100
+      },
+      {
+        "tag": "ROND",
+        "min": 0,
+        "max": 100
+      },
+      {
+        "tag": "wdth",
+        "min": 50,
+        "max": 150
+      },
+      {
+        "tag": "wght",
+        "min": 100,
+        "max": 700
+      }
+    ],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Tiny5+Duo",
+      "repository": "https://github.com/Gissio/font_tiny5"
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Tiny5+Duo:BLED@0..100;JITT@0..100;ROND@0..100;wdth@50..150;wght@100..700&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/tiny5-duo/svg",
+      "png": "fonts/tiny5-duo/png",
+      "webp": "fonts/tiny5-duo/webp"
+    }
+  },
+  {
     "id": "tiro-bangla",
     "family": "Tiro Bangla",
     "category": "serif",

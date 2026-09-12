@@ -1141,7 +1141,7 @@
     {
       "id": "display",
       "name": "Display",
-      "count": 503,
+      "count": 504,
       "families": [
         "aboreto",
         "abril-fatface",
@@ -1613,6 +1613,7 @@
         "tilt-neon",
         "tilt-prism",
         "tilt-warp",
+        "tiny5-duo",
         "titan-one",
         "tourney",
         "trade-winds",
