@@ -24354,6 +24354,82 @@
     }
   },
   {
+    "id": "google-sans",
+    "family": "Google Sans",
+    "category": "sans-serif",
+    "designer": {
+      "name": "Google"
+    },
+    "license": "OFL",
+    "dateAdded": "2017-06-05",
+    "subsets": [
+      "armenian",
+      "bengali",
+      "canadian-aboriginal",
+      "cyrillic",
+      "cyrillic-ext",
+      "devanagari",
+      "ethiopic",
+      "georgian",
+      "greek",
+      "greek-ext",
+      "gujarati",
+      "gurmukhi",
+      "hebrew",
+      "kannada",
+      "khmer",
+      "lao",
+      "latin",
+      "latin-ext",
+      "malayalam",
+      "menu",
+      "oriya",
+      "sinhala",
+      "symbols",
+      "tamil",
+      "telugu",
+      "thai",
+      "vietnamese"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "weights": [
+      400
+    ],
+    "variable": true,
+    "axes": [
+      {
+        "tag": "GRAD",
+        "min": -50,
+        "max": 200
+      },
+      {
+        "tag": "opsz",
+        "min": 17,
+        "max": 18
+      },
+      {
+        "tag": "wght",
+        "min": 400,
+        "max": 700
+      }
+    ],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Google+Sans",
+      "repository": ""
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Google+Sans:GRAD@-50..200;opsz@17..18;wght@400..700&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/google-sans/svg",
+      "png": "fonts/google-sans/png",
+      "webp": "fonts/google-sans/webp"
+    }
+  },
+  {
     "id": "google-sans-code",
     "family": "Google Sans Code",
     "category": "monospace",

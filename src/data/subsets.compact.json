@@ -3,37 +3,37 @@
     {
       "id": "menu",
       "name": "Menu",
-      "count": 2024
+      "count": 2025
     },
     {
       "id": "latin",
       "name": "Latin",
-      "count": 1882
+      "count": 1883
     },
     {
       "id": "latin-ext",
       "name": "Latin Ext",
-      "count": 1555
+      "count": 1556
     },
     {
       "id": "vietnamese",
       "name": "Vietnamese",
-      "count": 541
+      "count": 542
     },
     {
       "id": "cyrillic",
       "name": "Cyrillic",
-      "count": 308
+      "count": 309
     },
     {
       "id": "cyrillic-ext",
       "name": "Cyrillic Ext",
-      "count": 245
+      "count": 246
     },
     {
       "id": "greek",
       "name": "Greek",
-      "count": 129
+      "count": 130
     },
     {
       "id": "math",
@@ -43,12 +43,12 @@
     {
       "id": "greek-ext",
       "name": "Greek Ext",
-      "count": 75
+      "count": 76
     },
     {
       "id": "symbols",
       "name": "Symbols",
-      "count": 73
+      "count": 74
     },
     {
       "id": "japanese",
@@ -58,12 +58,12 @@
     {
       "id": "devanagari",
       "name": "Devanagari",
-      "count": 66
+      "count": 67
     },
     {
       "id": "hebrew",
       "name": "Hebrew",
-      "count": 62
+      "count": 63
     },
     {
       "id": "arabic",
@@ -78,17 +78,17 @@
     {
       "id": "thai",
       "name": "Thai",
-      "count": 34
+      "count": 35
     },
     {
       "id": "khmer",
       "name": "Khmer",
-      "count": 28
+      "count": 29
     },
     {
       "id": "telugu",
       "name": "Telugu",
-      "count": 28
+      "count": 29
     },
     {
       "id": "symbols2",
@@ -98,7 +98,7 @@
     {
       "id": "tamil",
       "name": "Tamil",
-      "count": 18
+      "count": 19
     },
     {
       "id": "chinese-traditional",
@@ -108,21 +108,31 @@
     {
       "id": "gujarati",
       "name": "Gujarati",
-      "count": 13
+      "count": 14
     },
     {
       "id": "bengali",
       "name": "Bengali",
-      "count": 12
+      "count": 13
     },
     {
       "id": "gurmukhi",
       "name": "Gurmukhi",
-      "count": 11
+      "count": 12
     },
     {
       "id": "kannada",
       "name": "Kannada",
+      "count": 12
+    },
+    {
+      "id": "malayalam",
+      "name": "Malayalam",
+      "count": 11
+    },
+    {
+      "id": "sinhala",
+      "name": "Sinhala",
       "count": 11
     },
     {
@@ -131,19 +141,29 @@
       "count": 10
     },
     {
-      "id": "malayalam",
-      "name": "Malayalam",
-      "count": 10
-    },
-    {
-      "id": "sinhala",
-      "name": "Sinhala",
-      "count": 10
-    },
-    {
       "id": "emoji",
       "name": "Emoji",
       "count": 9
+    },
+    {
+      "id": "armenian",
+      "name": "Armenian",
+      "count": 7
+    },
+    {
+      "id": "ethiopic",
+      "name": "Ethiopic",
+      "count": 7
+    },
+    {
+      "id": "lao",
+      "name": "Lao",
+      "count": 7
+    },
+    {
+      "id": "oriya",
+      "name": "Oriya",
+      "count": 7
     },
     {
       "id": "syriac",
@@ -151,34 +171,14 @@
       "count": 7
     },
     {
-      "id": "armenian",
-      "name": "Armenian",
-      "count": 6
-    },
-    {
       "id": "braille",
       "name": "Braille",
       "count": 6
     },
     {
-      "id": "ethiopic",
-      "name": "Ethiopic",
-      "count": 6
-    },
-    {
-      "id": "lao",
-      "name": "Lao",
-      "count": 6
-    },
-    {
-      "id": "oriya",
-      "name": "Oriya",
-      "count": 6
-    },
-    {
       "id": "canadian-aboriginal",
       "name": "Canadian Aboriginal",
-      "count": 5
+      "count": 6
     },
     {
       "id": "cherokee",
@@ -211,6 +211,11 @@
       "count": 3
     },
     {
+      "id": "georgian",
+      "name": "Georgian",
+      "count": 3
+    },
+    {
       "id": "kayah-li",
       "name": "Kayah Li",
       "count": 3
@@ -238,11 +243,6 @@
     {
       "id": "balinese",
       "name": "Balinese",
-      "count": 2
-    },
-    {
-      "id": "georgian",
-      "name": "Georgian",
       "count": 2
     },
     {

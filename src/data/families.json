@@ -13199,6 +13199,54 @@
       ]
     },
     {
+      "id": "google-sans",
+      "family": "Google Sans",
+      "category": "sans-serif",
+      "designer": "Google",
+      "variable": true,
+      "styles": [
+        "normal",
+        "italic"
+      ],
+      "weights": [
+        400
+      ],
+      "subsets": [
+        "armenian",
+        "bengali",
+        "canadian-aboriginal",
+        "cyrillic",
+        "cyrillic-ext",
+        "devanagari",
+        "ethiopic",
+        "georgian",
+        "greek",
+        "greek-ext",
+        "gujarati",
+        "gurmukhi",
+        "hebrew",
+        "kannada",
+        "khmer",
+        "lao",
+        "latin",
+        "latin-ext",
+        "malayalam",
+        "menu",
+        "oriya",
+        "sinhala",
+        "symbols",
+        "tamil",
+        "telugu",
+        "thai",
+        "vietnamese"
+      ],
+      "axes": [
+        "GRAD",
+        "opsz",
+        "wght"
+      ]
+    },
+    {
       "id": "google-sans-code",
       "family": "Google Sans Code",
       "category": "monospace",
@@ -42957,5 +43005,5 @@
       "axes": []
     }
   ],
-  "total": 2029
+  "total": 2030
 }
