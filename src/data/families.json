@@ -41917,6 +41917,31 @@
       "axes": []
     },
     {
+      "id": "xmind",
+      "family": "Xmind",
+      "category": "sans-serif",
+      "designer": "lan",
+      "variable": true,
+      "styles": [
+        "normal",
+        "italic"
+      ],
+      "weights": [
+        400
+      ],
+      "subsets": [
+        "cyrillic",
+        "cyrillic-ext",
+        "greek",
+        "latin",
+        "latin-ext",
+        "menu"
+      ],
+      "axes": [
+        "wght"
+      ]
+    },
+    {
       "id": "yaldevi",
       "family": "Yaldevi",
       "category": "sans-serif",
@@ -43005,5 +43030,5 @@
       "axes": []
     }
   ],
-  "total": 2030
+  "total": 2031
 }

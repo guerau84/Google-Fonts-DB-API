@@ -77020,6 +77020,51 @@
     }
   },
   {
+    "id": "xmind",
+    "family": "Xmind",
+    "category": "sans-serif",
+    "designer": {
+      "name": "lan"
+    },
+    "license": "OFL",
+    "dateAdded": "2026-09-10",
+    "subsets": [
+      "cyrillic",
+      "cyrillic-ext",
+      "greek",
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "weights": [
+      400
+    ],
+    "variable": true,
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 100,
+        "max": 900
+      }
+    ],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Xmind",
+      "repository": "https://github.com/lamzhonghang/xmind"
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Xmind:wght@100..900&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/xmind/svg",
+      "png": "fonts/xmind/png",
+      "webp": "fonts/xmind/webp"
+    }
+  },
+  {
     "id": "yaldevi",
     "family": "Yaldevi",
     "category": "sans-serif",

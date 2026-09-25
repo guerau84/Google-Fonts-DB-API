@@ -3,7 +3,7 @@
     {
       "id": "menu",
       "name": "Menu",
-      "count": 2025,
+      "count": 2026,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -1980,6 +1980,7 @@
         "work-sans",
         "workbench",
         "xanh-mono",
+        "xmind",
         "yaldevi",
         "yaldevi-colombo",
         "yanone-kaffeesatz",
@@ -2035,7 +2036,7 @@
     {
       "id": "latin",
       "name": "Latin",
-      "count": 1883,
+      "count": 1884,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -3871,6 +3872,7 @@
         "work-sans",
         "workbench",
         "xanh-mono",
+        "xmind",
         "yaldevi",
         "yaldevi-colombo",
         "yanone-kaffeesatz",
@@ -3925,7 +3927,7 @@
     {
       "id": "latin-ext",
       "name": "Latin Ext",
-      "count": 1556,
+      "count": 1557,
       "families": [
         "abeezee",
         "abhaya-libre",
@@ -5447,6 +5449,7 @@
         "wix-madefor-text",
         "work-sans",
         "xanh-mono",
+        "xmind",
         "yaldevi",
         "yaldevi-colombo",
         "yanone-kaffeesatz",
@@ -6037,7 +6040,7 @@
     {
       "id": "cyrillic",
       "name": "Cyrillic",
-      "count": 309,
+      "count": 310,
       "families": [
         "advent-pro",
         "akt",
@@ -6331,6 +6334,7 @@
         "wdxl-lubrifont-tc",
         "wix-madefor-display",
         "wix-madefor-text",
+        "xmind",
         "yanone-kaffeesatz",
         "yeseva-one",
         "yomogi",
@@ -6353,7 +6357,7 @@
     {
       "id": "cyrillic-ext",
       "name": "Cyrillic Ext",
-      "count": 246,
+      "count": 247,
       "families": [
         "advent-pro",
         "afacad",
@@ -6595,6 +6599,7 @@
         "vollkorn-sc",
         "wix-madefor-display",
         "wix-madefor-text",
+        "xmind",
         "yanone-kaffeesatz",
         "yeseva-one",
         "ysabeau",
@@ -6606,7 +6611,7 @@
     {
       "id": "greek",
       "name": "Greek",
-      "count": 130,
+      "count": 131,
       "families": [
         "advent-pro",
         "akt",
@@ -6729,6 +6734,7 @@
         "ubuntu-sans-mono",
         "victor-mono",
         "vollkorn",
+        "xmind",
         "ysabeau",
         "ysabeau-infant",
         "ysabeau-office",

@@ -3,17 +3,17 @@
     {
       "id": "menu",
       "name": "Menu",
-      "count": 2025
+      "count": 2026
     },
     {
       "id": "latin",
       "name": "Latin",
-      "count": 1883
+      "count": 1884
     },
     {
       "id": "latin-ext",
       "name": "Latin Ext",
-      "count": 1556
+      "count": 1557
     },
     {
       "id": "vietnamese",
@@ -23,17 +23,17 @@
     {
       "id": "cyrillic",
       "name": "Cyrillic",
-      "count": 309
+      "count": 310
     },
     {
       "id": "cyrillic-ext",
       "name": "Cyrillic Ext",
-      "count": 246
+      "count": 247
     },
     {
       "id": "greek",
       "name": "Greek",
-      "count": 130
+      "count": 131
     },
     {
       "id": "math",
