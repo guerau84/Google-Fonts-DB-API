@@ -11571,6 +11571,29 @@
       "axes": []
     },
     {
+      "id": "firjar",
+      "family": "Firjar",
+      "category": "sans-serif",
+      "designer": "Yazeed Omar",
+      "variable": true,
+      "styles": [
+        "normal"
+      ],
+      "weights": [
+        400
+      ],
+      "subsets": [
+        "arabic",
+        "latin",
+        "latin-ext",
+        "menu"
+      ],
+      "axes": [
+        "wdth",
+        "wght"
+      ]
+    },
+    {
       "id": "fjalla-one",
       "family": "Fjalla One",
       "category": "sans-serif",
@@ -34104,6 +34127,153 @@
       "axes": []
     },
     {
+      "id": "redaction",
+      "family": "Redaction",
+      "category": "serif",
+      "designer": "MCKL",
+      "variable": false,
+      "styles": [
+        "normal",
+        "italic"
+      ],
+      "weights": [
+        400,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext",
+        "menu"
+      ],
+      "axes": []
+    },
+    {
+      "id": "redaction-10",
+      "family": "Redaction 10",
+      "category": "serif",
+      "designer": "MCKL",
+      "variable": false,
+      "styles": [
+        "normal",
+        "italic"
+      ],
+      "weights": [
+        400,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext",
+        "menu"
+      ],
+      "axes": []
+    },
+    {
+      "id": "redaction-100",
+      "family": "Redaction 100",
+      "category": "display",
+      "designer": "MCKL",
+      "variable": false,
+      "styles": [
+        "normal",
+        "italic"
+      ],
+      "weights": [
+        400,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext",
+        "menu"
+      ],
+      "axes": []
+    },
+    {
+      "id": "redaction-20",
+      "family": "Redaction 20",
+      "category": "serif",
+      "designer": "MCKL",
+      "variable": false,
+      "styles": [
+        "normal",
+        "italic"
+      ],
+      "weights": [
+        400,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext",
+        "menu"
+      ],
+      "axes": []
+    },
+    {
+      "id": "redaction-35",
+      "family": "Redaction 35",
+      "category": "display",
+      "designer": "MCKL",
+      "variable": false,
+      "styles": [
+        "normal",
+        "italic"
+      ],
+      "weights": [
+        400,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext",
+        "menu"
+      ],
+      "axes": []
+    },
+    {
+      "id": "redaction-50",
+      "family": "Redaction 50",
+      "category": "display",
+      "designer": "MCKL",
+      "variable": false,
+      "styles": [
+        "normal",
+        "italic"
+      ],
+      "weights": [
+        400,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext",
+        "menu"
+      ],
+      "axes": []
+    },
+    {
+      "id": "redaction-70",
+      "family": "Redaction 70",
+      "category": "display",
+      "designer": "MCKL",
+      "variable": false,
+      "styles": [
+        "normal",
+        "italic"
+      ],
+      "weights": [
+        400,
+        700
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext",
+        "menu"
+      ],
+      "axes": []
+    },
+    {
       "id": "reddit-mono",
       "family": "Reddit Mono",
       "category": "monospace",
@@ -43030,5 +43200,5 @@
       "axes": []
     }
   ],
-  "total": 2031
+  "total": 2039
 }

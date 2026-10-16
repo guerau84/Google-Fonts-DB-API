@@ -3,17 +3,17 @@
     {
       "id": "menu",
       "name": "Menu",
-      "count": 2026
+      "count": 2034
     },
     {
       "id": "latin",
       "name": "Latin",
-      "count": 1884
+      "count": 1892
     },
     {
       "id": "latin-ext",
       "name": "Latin Ext",
-      "count": 1557
+      "count": 1565
     },
     {
       "id": "vietnamese",
@@ -68,7 +68,7 @@
     {
       "id": "arabic",
       "name": "Arabic",
-      "count": 60
+      "count": 61
     },
     {
       "id": "korean",

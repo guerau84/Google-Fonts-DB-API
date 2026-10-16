@@ -3,7 +3,7 @@
     {
       "id": "sans-serif",
       "name": "Sans Serif",
-      "count": 762,
+      "count": 763,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -176,6 +176,7 @@
         "fira-sans",
         "fira-sans-condensed",
         "fira-sans-extra-condensed",
+        "firjar",
         "fjalla-one",
         "fragment-mono",
         "fragment-mono-sc",
@@ -772,7 +773,7 @@
     {
       "id": "serif",
       "name": "Serif",
-      "count": 364,
+      "count": 367,
       "families": [
         "abhaya-libre",
         "abyssinica-sil",
@@ -1061,6 +1062,9 @@
         "ramaraja",
         "ramsina",
         "rasa",
+        "redaction",
+        "redaction-10",
+        "redaction-20",
         "rhodium-libre",
         "roboto-serif",
         "roboto-slab",
@@ -1143,7 +1147,7 @@
     {
       "id": "display",
       "name": "Display",
-      "count": 504,
+      "count": 508,
       "families": [
         "aboreto",
         "abril-fatface",
@@ -1531,6 +1535,10 @@
         "red-rose",
         "redacted",
         "redacted-script",
+        "redaction-100",
+        "redaction-35",
+        "redaction-50",
+        "redaction-70",
         "reggae-one",
         "revalia",
         "ribeye",
