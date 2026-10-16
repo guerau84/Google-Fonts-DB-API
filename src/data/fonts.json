@@ -21354,6 +21354,53 @@
     }
   },
   {
+    "id": "firjar",
+    "family": "Firjar",
+    "category": "sans-serif",
+    "designer": {
+      "name": "Yazeed Omar"
+    },
+    "license": "OFL",
+    "dateAdded": "2026-10-15",
+    "subsets": [
+      "arabic",
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "weights": [
+      400
+    ],
+    "variable": true,
+    "axes": [
+      {
+        "tag": "wdth",
+        "min": 75,
+        "max": 125
+      },
+      {
+        "tag": "wght",
+        "min": 100,
+        "max": 800
+      }
+    ],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Firjar",
+      "repository": "https://github.com/Mestaratype/Firjar"
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Firjar:wdth@75..125;wght@100..800&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/firjar/svg",
+      "png": "fonts/firjar/png",
+      "webp": "fonts/firjar/webp"
+    }
+  },
+  {
     "id": "fjalla-one",
     "family": "Fjalla One",
     "category": "sans-serif",
@@ -62776,6 +62823,265 @@
       "svg": "fonts/redacted-script/svg",
       "png": "fonts/redacted-script/png",
       "webp": "fonts/redacted-script/webp"
+    }
+  },
+  {
+    "id": "redaction",
+    "family": "Redaction",
+    "category": "serif",
+    "designer": {
+      "name": "MCKL"
+    },
+    "license": "OFL",
+    "dateAdded": "2026-10-09",
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "weights": [
+      400,
+      700
+    ],
+    "variable": false,
+    "axes": [],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Redaction",
+      "repository": "https://github.com/jeremymickel/Redaction"
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Redaction&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/redaction/svg",
+      "png": "fonts/redaction/png",
+      "webp": "fonts/redaction/webp"
+    }
+  },
+  {
+    "id": "redaction-10",
+    "family": "Redaction 10",
+    "category": "serif",
+    "designer": {
+      "name": "MCKL"
+    },
+    "license": "OFL",
+    "dateAdded": "2026-10-14",
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "weights": [
+      400,
+      700
+    ],
+    "variable": false,
+    "axes": [],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Redaction+10",
+      "repository": "https://github.com/jeremymickel/Redaction"
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Redaction+10&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/redaction-10/svg",
+      "png": "fonts/redaction-10/png",
+      "webp": "fonts/redaction-10/webp"
+    }
+  },
+  {
+    "id": "redaction-100",
+    "family": "Redaction 100",
+    "category": "display",
+    "designer": {
+      "name": "MCKL"
+    },
+    "license": "OFL",
+    "dateAdded": "2026-10-14",
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "weights": [
+      400,
+      700
+    ],
+    "variable": false,
+    "axes": [],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Redaction+100",
+      "repository": "https://github.com/jeremymickel/Redaction"
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Redaction+100&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/redaction-100/svg",
+      "png": "fonts/redaction-100/png",
+      "webp": "fonts/redaction-100/webp"
+    }
+  },
+  {
+    "id": "redaction-20",
+    "family": "Redaction 20",
+    "category": "serif",
+    "designer": {
+      "name": "MCKL"
+    },
+    "license": "OFL",
+    "dateAdded": "2026-10-14",
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "weights": [
+      400,
+      700
+    ],
+    "variable": false,
+    "axes": [],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Redaction+20",
+      "repository": "https://github.com/jeremymickel/Redaction"
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Redaction+20&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/redaction-20/svg",
+      "png": "fonts/redaction-20/png",
+      "webp": "fonts/redaction-20/webp"
+    }
+  },
+  {
+    "id": "redaction-35",
+    "family": "Redaction 35",
+    "category": "display",
+    "designer": {
+      "name": "MCKL"
+    },
+    "license": "OFL",
+    "dateAdded": "2026-10-14",
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "weights": [
+      400,
+      700
+    ],
+    "variable": false,
+    "axes": [],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Redaction+35",
+      "repository": "https://github.com/jeremymickel/Redaction"
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Redaction+35&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/redaction-35/svg",
+      "png": "fonts/redaction-35/png",
+      "webp": "fonts/redaction-35/webp"
+    }
+  },
+  {
+    "id": "redaction-50",
+    "family": "Redaction 50",
+    "category": "display",
+    "designer": {
+      "name": "MCKL"
+    },
+    "license": "OFL",
+    "dateAdded": "2026-10-14",
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "weights": [
+      400,
+      700
+    ],
+    "variable": false,
+    "axes": [],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Redaction+50",
+      "repository": "https://github.com/jeremymickel/Redaction"
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Redaction+50&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/redaction-50/svg",
+      "png": "fonts/redaction-50/png",
+      "webp": "fonts/redaction-50/webp"
+    }
+  },
+  {
+    "id": "redaction-70",
+    "family": "Redaction 70",
+    "category": "display",
+    "designer": {
+      "name": "MCKL"
+    },
+    "license": "OFL",
+    "dateAdded": "2026-10-14",
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "weights": [
+      400,
+      700
+    ],
+    "variable": false,
+    "axes": [],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Redaction+70",
+      "repository": "https://github.com/jeremymickel/Redaction"
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Redaction+70&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/redaction-70/svg",
+      "png": "fonts/redaction-70/png",
+      "webp": "fonts/redaction-70/webp"
     }
   },
   {
