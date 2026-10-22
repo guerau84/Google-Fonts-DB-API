@@ -1,21 +1,21 @@
 {
-  "fonts": 2039,
+  "fonts": 2040,
   "categories": 5,
   "subsets": 182,
-  "designers": 608,
+  "designers": 609,
   "variable": {
-    "families": 590,
-    "percentage": 28.94
+    "families": 591,
+    "percentage": 28.97
   },
   "styles": {
-    "normal": 2037,
+    "normal": 2038,
     "italic": 366
   },
   "weights": {
     "100": 56,
     "200": 75,
     "300": 147,
-    "400": 2036,
+    "400": 2037,
     "500": 140,
     "600": 124,
     "700": 328,
@@ -27,13 +27,13 @@
       "sans-serif": 763,
       "display": 508,
       "serif": 367,
-      "handwriting": 355,
+      "handwriting": 356,
       "monospace": 46
     },
     "subsets": {
-      "menu": 2034,
-      "latin": 1892,
-      "latin-ext": 1565,
+      "menu": 2035,
+      "latin": 1893,
+      "latin-ext": 1566,
       "vietnamese": 542,
       "cyrillic": 310,
       "cyrillic-ext": 247,
@@ -216,7 +216,7 @@
     }
   },
   "axes": {
-    "wght": 573,
+    "wght": 574,
     "wdth": 110,
     "opsz": 29,
     "slnt": 23,

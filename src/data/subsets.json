@@ -3,7 +3,7 @@
     {
       "id": "menu",
       "name": "Menu",
-      "count": 2034,
+      "count": 2035,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -23,6 +23,7 @@
         "afacad-flux",
         "agbalumo",
         "agdasima",
+        "agrave-pro",
         "agu-display",
         "aguafina-script",
         "akatab",
@@ -2044,7 +2045,7 @@
     {
       "id": "latin",
       "name": "Latin",
-      "count": 1892,
+      "count": 1893,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -2063,6 +2064,7 @@
         "afacad-flux",
         "agbalumo",
         "agdasima",
+        "agrave-pro",
         "agu-display",
         "aguafina-script",
         "akatab",
@@ -3943,7 +3945,7 @@
     {
       "id": "latin-ext",
       "name": "Latin Ext",
-      "count": 1565,
+      "count": 1566,
       "families": [
         "abeezee",
         "abhaya-libre",
@@ -3956,6 +3958,7 @@
         "afacad-flux",
         "agbalumo",
         "agdasima",
+        "agrave-pro",
         "agu-display",
         "aguafina-script",
         "akatab",
