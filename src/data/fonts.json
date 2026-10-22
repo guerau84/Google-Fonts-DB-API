@@ -679,6 +679,47 @@
     }
   },
   {
+    "id": "agrave-pro",
+    "family": "Agrave Pro",
+    "category": "handwriting",
+    "designer": {
+      "name": "Daan Jobsis"
+    },
+    "license": "OFL",
+    "dateAdded": "2026-10-09",
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "weights": [
+      400
+    ],
+    "variable": true,
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 100,
+        "max": 700
+      }
+    ],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Agrave+Pro",
+      "repository": "https://github.com/daanjobsis/agrave-pro"
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Agrave+Pro:wght@100..700&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/agrave-pro/svg",
+      "png": "fonts/agrave-pro/png",
+      "webp": "fonts/agrave-pro/webp"
+    }
+  },
+  {
     "id": "agu-display",
     "family": "Agu Display",
     "category": "display",

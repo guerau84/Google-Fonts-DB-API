@@ -368,6 +368,27 @@
       "axes": []
     },
     {
+      "id": "agrave-pro",
+      "family": "Agrave Pro",
+      "category": "handwriting",
+      "designer": "Daan Jobsis",
+      "variable": true,
+      "styles": [
+        "normal"
+      ],
+      "weights": [
+        400
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext",
+        "menu"
+      ],
+      "axes": [
+        "wght"
+      ]
+    },
+    {
       "id": "agu-display",
       "family": "Agu Display",
       "category": "display",
@@ -43200,5 +43221,5 @@
       "axes": []
     }
   ],
-  "total": 2039
+  "total": 2040
 }

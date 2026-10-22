@@ -1662,8 +1662,9 @@
     {
       "id": "handwriting",
       "name": "Handwriting",
-      "count": 355,
+      "count": 356,
       "families": [
+        "agrave-pro",
         "aguafina-script",
         "alex-brush",
         "allison",
