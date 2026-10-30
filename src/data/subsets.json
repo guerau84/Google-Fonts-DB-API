@@ -3,7 +3,7 @@
     {
       "id": "menu",
       "name": "Menu",
-      "count": 2035,
+      "count": 2036,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -953,6 +953,7 @@
         "macondo",
         "macondo-swash-caps",
         "mada",
+        "madhuban",
         "madimi-one",
         "magra",
         "maiden-orange",
@@ -2045,7 +2046,7 @@
     {
       "id": "latin",
       "name": "Latin",
-      "count": 1893,
+      "count": 1894,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -2987,6 +2988,7 @@
         "macondo",
         "macondo-swash-caps",
         "mada",
+        "madhuban",
         "madimi-one",
         "magra",
         "maiden-orange",
@@ -3945,7 +3947,7 @@
     {
       "id": "latin-ext",
       "name": "Latin Ext",
-      "count": 1566,
+      "count": 1567,
       "families": [
         "abeezee",
         "abhaya-libre",
@@ -4699,6 +4701,7 @@
         "macondo",
         "macondo-swash-caps",
         "mada",
+        "madhuban",
         "madimi-one",
         "magra",
         "maitree",
@@ -5518,7 +5521,7 @@
     {
       "id": "vietnamese",
       "name": "Vietnamese",
-      "count": 542,
+      "count": 543,
       "families": [
         "afacad",
         "afacad-flux",
@@ -5830,6 +5833,7 @@
         "m-plus-code-latin",
         "m-plus-rounded-1c",
         "m-plus-u",
+        "madhuban",
         "maitree",
         "major-mono-display",
         "mali",
@@ -7102,7 +7106,7 @@
     {
       "id": "devanagari",
       "name": "Devanagari",
-      "count": 67,
+      "count": 68,
       "families": [
         "akshar",
         "alkatra",
@@ -7139,6 +7143,7 @@
         "kripa",
         "kurale",
         "laila",
+        "madhuban",
         "martel",
         "martel-sans",
         "matangi",
