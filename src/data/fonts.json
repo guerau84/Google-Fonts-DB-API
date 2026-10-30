@@ -37209,6 +37209,49 @@
     }
   },
   {
+    "id": "madhuban",
+    "family": "Madhuban",
+    "category": "sans-serif",
+    "designer": {
+      "name": "Jaikishan Patel"
+    },
+    "license": "OFL",
+    "dateAdded": "2026-10-26",
+    "subsets": [
+      "devanagari",
+      "latin",
+      "latin-ext",
+      "menu",
+      "vietnamese"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "weights": [
+      400
+    ],
+    "variable": true,
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 300,
+        "max": 700
+      }
+    ],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Madhuban",
+      "repository": "https://github.com/magictype/Madhuban"
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Madhuban:wght@300..700&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/madhuban/svg",
+      "png": "fonts/madhuban/png",
+      "webp": "fonts/madhuban/webp"
+    }
+  },
+  {
     "id": "madimi-one",
     "family": "Madimi One",
     "category": "sans-serif",

@@ -20362,6 +20362,29 @@
       ]
     },
     {
+      "id": "madhuban",
+      "family": "Madhuban",
+      "category": "sans-serif",
+      "designer": "Jaikishan Patel",
+      "variable": true,
+      "styles": [
+        "normal"
+      ],
+      "weights": [
+        400
+      ],
+      "subsets": [
+        "devanagari",
+        "latin",
+        "latin-ext",
+        "menu",
+        "vietnamese"
+      ],
+      "axes": [
+        "wght"
+      ]
+    },
+    {
       "id": "madimi-one",
       "family": "Madimi One",
       "category": "sans-serif",
@@ -43221,5 +43244,5 @@
       "axes": []
     }
   ],
-  "total": 2040
+  "total": 2041
 }
