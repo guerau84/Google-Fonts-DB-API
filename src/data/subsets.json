@@ -3,7 +3,7 @@
     {
       "id": "menu",
       "name": "Menu",
-      "count": 2036,
+      "count": 2037,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -595,6 +595,7 @@
         "geist",
         "geist-mono",
         "geist-pixel",
+        "geist-serif",
         "gelasio",
         "gemunu-libre",
         "genos",
@@ -2046,7 +2047,7 @@
     {
       "id": "latin",
       "name": "Latin",
-      "count": 1894,
+      "count": 1895,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -2634,6 +2635,7 @@
         "geist",
         "geist-mono",
         "geist-pixel",
+        "geist-serif",
         "gelasio",
         "gemunu-libre",
         "genos",
@@ -3947,7 +3949,7 @@
     {
       "id": "latin-ext",
       "name": "Latin Ext",
-      "count": 1567,
+      "count": 1568,
       "families": [
         "abeezee",
         "abhaya-libre",
@@ -4426,6 +4428,7 @@
         "geist",
         "geist-mono",
         "geist-pixel",
+        "geist-serif",
         "gelasio",
         "gemunu-libre",
         "genos",
@@ -5521,7 +5524,7 @@
     {
       "id": "vietnamese",
       "name": "Vietnamese",
-      "count": 543,
+      "count": 544,
       "families": [
         "afacad",
         "afacad-flux",
@@ -5721,6 +5724,7 @@
         "ga-maamli",
         "geist",
         "geist-mono",
+        "geist-serif",
         "gelasio",
         "genos",
         "gentium-book-plus",

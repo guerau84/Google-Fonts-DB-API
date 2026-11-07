@@ -12586,6 +12586,28 @@
       ]
     },
     {
+      "id": "geist-serif",
+      "family": "Geist Serif",
+      "category": "serif",
+      "designer": "Andrés Briganti, Mark Davis, Evil Rabbit, Guillermo Rauch",
+      "variable": true,
+      "styles": [
+        "normal"
+      ],
+      "weights": [
+        400
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext",
+        "menu",
+        "vietnamese"
+      ],
+      "axes": [
+        "ELSH"
+      ]
+    },
+    {
       "id": "gelasio",
       "family": "Gelasio",
       "category": "serif",
@@ -43244,5 +43266,5 @@
       "axes": []
     }
   ],
-  "total": 2041
+  "total": 2042
 }
