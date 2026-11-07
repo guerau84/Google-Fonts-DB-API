@@ -774,7 +774,7 @@
     {
       "id": "serif",
       "name": "Serif",
-      "count": 367,
+      "count": 368,
       "families": [
         "abhaya-libre",
         "abyssinica-sil",
@@ -880,6 +880,7 @@
         "frank-ruhl-libre",
         "fraunces",
         "gabriela",
+        "geist-serif",
         "gelasio",
         "gentium-book-plus",
         "gentium-plus",

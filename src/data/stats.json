@@ -1,21 +1,21 @@
 {
-  "fonts": 2041,
+  "fonts": 2042,
   "categories": 5,
   "subsets": 182,
-  "designers": 609,
+  "designers": 610,
   "variable": {
-    "families": 592,
-    "percentage": 29.01
+    "families": 593,
+    "percentage": 29.04
   },
   "styles": {
-    "normal": 2039,
+    "normal": 2040,
     "italic": 366
   },
   "weights": {
     "100": 56,
     "200": 75,
     "300": 147,
-    "400": 2038,
+    "400": 2039,
     "500": 140,
     "600": 124,
     "700": 328,
@@ -26,15 +26,15 @@
     "categories": {
       "sans-serif": 764,
       "display": 508,
-      "serif": 367,
+      "serif": 368,
       "handwriting": 356,
       "monospace": 46
     },
     "subsets": {
-      "menu": 2036,
-      "latin": 1894,
-      "latin-ext": 1567,
-      "vietnamese": 543,
+      "menu": 2037,
+      "latin": 1895,
+      "latin-ext": 1568,
+      "vietnamese": 544,
       "cyrillic": 310,
       "cyrillic-ext": 247,
       "greek": 131,
@@ -220,7 +220,7 @@
     "wdth": 110,
     "opsz": 29,
     "slnt": 23,
-    "ELSH": 15,
+    "ELSH": 16,
     "CRSV": 14,
     "ELXP": 12,
     "SZP1": 6,

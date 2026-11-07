@@ -23229,6 +23229,48 @@
     }
   },
   {
+    "id": "geist-serif",
+    "family": "Geist Serif",
+    "category": "serif",
+    "designer": {
+      "name": "Andrés Briganti, Mark Davis, Evil Rabbit, Guillermo Rauch"
+    },
+    "license": "OFL",
+    "dateAdded": "2026-11-03",
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu",
+      "vietnamese"
+    ],
+    "styles": [
+      "normal"
+    ],
+    "weights": [
+      400
+    ],
+    "variable": true,
+    "axes": [
+      {
+        "tag": "ELSH",
+        "min": 0,
+        "max": 100
+      }
+    ],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Geist+Serif",
+      "repository": "https://github.com/vercel/geist-font"
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Geist+Serif:ELSH@0..100&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/geist-serif/svg",
+      "png": "fonts/geist-serif/png",
+      "webp": "fonts/geist-serif/webp"
+    }
+  },
+  {
     "id": "gelasio",
     "family": "Gelasio",
     "category": "serif",
