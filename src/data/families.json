@@ -6691,6 +6691,29 @@
       "axes": []
     },
     {
+      "id": "cal-sans-text-ui",
+      "family": "Cal Sans Text UI",
+      "category": "sans-serif",
+      "designer": "Mark Davis, Cal.com Inc.",
+      "variable": true,
+      "styles": [
+        "normal",
+        "italic"
+      ],
+      "weights": [
+        400
+      ],
+      "subsets": [
+        "latin",
+        "latin-ext",
+        "menu",
+        "vietnamese"
+      ],
+      "axes": [
+        "wght"
+      ]
+    },
+    {
       "id": "caladea",
       "family": "Caladea",
       "category": "serif",
@@ -43266,5 +43289,5 @@
       "axes": []
     }
   ],
-  "total": 2042
+  "total": 2043
 }
