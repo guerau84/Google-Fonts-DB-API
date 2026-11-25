@@ -3,7 +3,7 @@
     {
       "id": "menu",
       "name": "Menu",
-      "count": 2037,
+      "count": 2038,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -316,6 +316,7 @@
         "cairo",
         "cairo-play",
         "cal-sans",
+        "cal-sans-text-ui",
         "caladea",
         "calistoga",
         "calligraffitti",
@@ -2047,7 +2048,7 @@
     {
       "id": "latin",
       "name": "Latin",
-      "count": 1895,
+      "count": 1896,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -2358,6 +2359,7 @@
         "cairo",
         "cairo-play",
         "cal-sans",
+        "cal-sans-text-ui",
         "caladea",
         "calistoga",
         "calligraffitti",
@@ -3949,7 +3951,7 @@
     {
       "id": "latin-ext",
       "name": "Latin Ext",
-      "count": 1568,
+      "count": 1569,
       "families": [
         "abeezee",
         "abhaya-libre",
@@ -4206,6 +4208,7 @@
         "cairo",
         "cairo-play",
         "cal-sans",
+        "cal-sans-text-ui",
         "caladea",
         "calistoga",
         "cambay",
@@ -5524,7 +5527,7 @@
     {
       "id": "vietnamese",
       "name": "Vietnamese",
-      "count": 544,
+      "count": 545,
       "families": [
         "afacad",
         "afacad-flux",
@@ -5638,6 +5641,7 @@
         "cabin-condensed",
         "cactus-classical-serif",
         "cal-sans",
+        "cal-sans-text-ui",
         "calistoga",
         "capriola",
         "caramel",

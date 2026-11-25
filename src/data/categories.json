@@ -3,7 +3,7 @@
     {
       "id": "sans-serif",
       "name": "Sans Serif",
-      "count": 764,
+      "count": 765,
       "families": [
         "42dot-sans",
         "abeezee",
@@ -102,6 +102,7 @@
         "cabin-condensed",
         "cagliostro",
         "cal-sans",
+        "cal-sans-text-ui",
         "cambay",
         "candal",
         "cantarell",

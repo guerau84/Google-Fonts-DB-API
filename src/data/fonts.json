@@ -12514,6 +12514,49 @@
     }
   },
   {
+    "id": "cal-sans-text-ui",
+    "family": "Cal Sans Text UI",
+    "category": "sans-serif",
+    "designer": {
+      "name": "Mark Davis, Cal.com Inc."
+    },
+    "license": "OFL",
+    "dateAdded": "2026-11-20",
+    "subsets": [
+      "latin",
+      "latin-ext",
+      "menu",
+      "vietnamese"
+    ],
+    "styles": [
+      "normal",
+      "italic"
+    ],
+    "weights": [
+      400
+    ],
+    "variable": true,
+    "axes": [
+      {
+        "tag": "wght",
+        "min": 400,
+        "max": 700
+      }
+    ],
+    "links": {
+      "googleFonts": "https://fonts.google.com/specimen/Cal+Sans+Text+UI",
+      "repository": "https://github.com/calcom/sans"
+    },
+    "css": {
+      "url": "https://fonts.googleapis.com/css2?family=Cal+Sans+Text+UI:wght@400..700&display=swap"
+    },
+    "previews": {
+      "svg": "fonts/cal-sans-text-ui/svg",
+      "png": "fonts/cal-sans-text-ui/png",
+      "webp": "fonts/cal-sans-text-ui/webp"
+    }
+  },
+  {
     "id": "caladea",
     "family": "Caladea",
     "category": "serif",
